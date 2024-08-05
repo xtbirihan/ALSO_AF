@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZCL_AF_CORE_ORG_DATA</CLSNAME>
+    <LANGU>D</LANGU>
+    <DESCRIPT>Adobe Forms - Organisationsdaten</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CMPNAME>CHANGE_ORG_DATA_VALUES</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Adjust organisational data using the logic flags</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>CHECK_DELETE_FOOTER</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Check whether the footer should be deleted</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>CHECK_DELETE_LOGO</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Check whether the logo is to be deleted</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>CHECK_DELETE_SENDER</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Check whether the transmitter is to be deleted</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>CONSTRUCTOR</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_INSTANCE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Create instance for the determination of the organ data</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_ORG_DATA</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Provide determined organisational data</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_ORG_DATA_KEY</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Determination of the access key</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_ORG_DATA_VALUES</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Determination of organisational data with access key</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GS_ORG_DATA</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Adobe Forms - Organisationsdaten</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GS_ORG_DATA_SEARCH_KEYS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Selektionskriterien zur Ermittlung der ORG-Daten</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GV_LOG_OBJECT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Anwendungs-Log: Objektname (Applikationskürzel)</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+   <DESCRIPTIONS_SUB>
+    <SEOSUBCOTX>
+     <CMPNAME>CHECK_DELETE_FOOTER</CMPNAME>
+     <SCONAME>RV_DELETE_FOOTER</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>X=Footer löschen</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CHECK_DELETE_LOGO</CMPNAME>
+     <SCONAME>RV_DELETE_LOGO</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>X=Logo löschen</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CHECK_DELETE_SENDER</CMPNAME>
+     <SCONAME>RV_DELETE_SENDER</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>X=Sender löschen</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <SCONAME>IS_ORG_DATA_KEYS</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Selektionskriterien zur Ermittlung der ORG-Daten</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <SCONAME>IV_LOG_OBJECT</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Anwendungs-Log: Objektname (Applikationskürzel)</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_INSTANCE</CMPNAME>
+     <SCONAME>IS_ORG_DATA_KEYS</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Selektionskriterien zur Ermittlung der ORG-Daten</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_INSTANCE</CMPNAME>
+     <SCONAME>IV_LOG_OBJECT</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Anwendungs-Log: Objektname (Applikationskürzel)</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_INSTANCE</CMPNAME>
+     <SCONAME>RO_ORG_DATA</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Adobe Forms - Organisationsdaten</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_ORG_DATA</CMPNAME>
+     <SCONAME>CO_LOGGER</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Adobe Forms - Logger</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_ORG_DATA</CMPNAME>
+     <SCONAME>RS_ORG_DATA_VALUES</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Adobe Forms - Organisationsdaten für die Ausgabe</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_ORG_DATA</CMPNAME>
+     <SCONAME>ZCX_AF_CORE_OUTPUT</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Adobe Forms - Zentrale Fehlerklasse</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_ORG_DATA_KEY</CMPNAME>
+     <SCONAME>RV_ORG_DATA_KEY</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Zugriffschlüssel zur Ermittlung der Organisationsdaten</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_ORG_DATA_KEY</CMPNAME>
+     <SCONAME>ZCX_AF_CORE_OUTPUT</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Adobe Forms - Zentrale Fehlerklasse</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_ORG_DATA_VALUES</CMPNAME>
+     <SCONAME>IV_ORG_DATA_KEY</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Zugriffschlüssel zur Ermittlung der Organisationsdaten</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_ORG_DATA_VALUES</CMPNAME>
+     <SCONAME>ZCX_AF_CORE_OUTPUT</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Adobe Forms - Zentrale Fehlerklasse</DESCRIPT>
+    </SEOSUBCOTX>
+   </DESCRIPTIONS_SUB>
+  </asx:values>
+ </asx:abap>
+</abapGit>

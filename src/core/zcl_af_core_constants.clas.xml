@@ -1,0 +1,293 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZCL_AF_CORE_CONSTANTS</CLSNAME>
+    <LANGU>D</LANGU>
+    <DESCRIPT>Adobe Forms - Konstanten</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CMPNAME>GC_ASC_DEVICE_TYP_SHORT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Ausgabegerät ZAF_OUT_ASC</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GC_CR_LF</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Zeichenpaar &quot;Wagenrücklauf u. Zeilenvorschub&quot;</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GC_DOCID_AVIS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Eindeutige Formularnummer</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GC_DOCID_CONFIG_CENTER</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Eindeutige Formularnummer</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GC_DOCID_DELNOTE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Eindeutige Formularnummer</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GC_DOCID_DN_BECHTLE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Eindeutige Formularnummer</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GC_DOCID_DN_BECHTLE_L</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Eindeutige Formularnummer</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GC_DOCID_GOLDENFORM</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Eindeutige Formularnummer</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GC_DOCID_PARTS_LIST</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Eindeutige Formularnummer</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GC_DOCID_PO_LIST</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Eindeutige Formularnummer</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GC_DOCID_RETURNS_DEL</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Eindeutige Formularnummer</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GC_DOCID_SN_ARC_DOC</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Eindeutige Formularnummer</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GC_EMAIL_RECEIVER_SEPARATOR</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Separator für mehrere E-Mail Adressen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GC_GROUP_OF_COMPANIES_LANGUAGE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Standardsprache des Konzerns</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GC_LOGGER_OBJECT_AF</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Logger Objektschlüssel</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GC_LOGGER_SUBOBJECT_ERROR</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Anwendungs-Log: Unterobjekt</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GC_LOGGER_TYP_A</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Anwendungs-Log: Fehlerschwere einer Meldung (A,E,W,I,S)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GC_LOGGER_TYP_E</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Anwendungs-Log: Fehlerschwere einer Meldung (A,E,W,I,S)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GC_LOGGER_TYP_I</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Anwendungs-Log: Fehlerschwere einer Meldung (A,E,W,I,S)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GC_LOGGER_TYP_S</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Anwendungs-Log: Fehlerschwere einer Meldung (A,E,W,I,S)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GC_LOGGER_TYP_W</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Anwendungs-Log: Fehlerschwere einer Meldung (A,E,W,I,S)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GC_LOG_SUBOBJ_CORE_CON</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Anwendungs-Log: Unterobjekt</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GC_LOG_SUBOBJ_CORE_OUTPUT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Anwendungs-Log: Unterobjekt</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GC_LOG_SUBOBJ_CTRL</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Anwendungs-Log: Unterobjekt</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GC_LOG_SUBOBJ_ENTRY</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Anwendungs-Log: Unterobjekt</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GC_LOG_SUBOBJ_SPEC</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Anwendungs-Log: Unterobjekt</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GC_MIME_REPOSITORY_LOGO_PATH</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Pfad im MIME Repository zu den Adobe Forms Logos</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GC_MSGID_DEFAULT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Adobe Forms - Standard Nachrichtenklasse</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GC_MSGNO_GENERIC</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Adobe Forms - Generische Nachricht mit 4 Variablen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GC_NOREPLY_SENDER</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Keine Rückantwort Adresse</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GC_OUTPUT_CHANNEL_ARCHIVE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Ausgabekanal - Archiv</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GC_OUTPUT_CHANNEL_FAX</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Ausgabekanal - Fax</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GC_OUTPUT_CHANNEL_FILE_CO</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Ausgabekanal - FILE</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GC_OUTPUT_CHANNEL_FTP_CO</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Ausgabekanal - FTP</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GC_OUTPUT_CHANNEL_MAIL_CO</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Ausgabekanal - E-Mail</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GC_OUTPUT_CHANNEL_OUT_INFO</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Ausgabekanal - Out-Info Sicherung</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GC_OUTPUT_CHANNEL_PREVIEW</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Ausgabekanal - Preview</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GC_OUTPUT_CHANNEL_PRINT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Ausgabekanal - PDF Druck</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GC_OUTPUT_CHANNEL_PRINT_PCL</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Ausgabekanal - PCL Druck</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GC_OUTPUT_CHANNEL_PRINT_PS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Ausgabekanal - PDL Postscript Druck</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GC_OUTPUT_CHANNEL_PRINT_ZPL</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Ausgabekanal - ZPL Druck</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GC_PCL_DEVICE_TYP_SHORT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Ausgabegerät ZAF_OUT_PCL</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GC_PCL_FILE_TYP</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Dateiendung PCL</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GC_PDF_DEVICE_TYP_SHORT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Ausgabegerät ZAF_OUT_PDF</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GC_PDF_FILE_TYP</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Dateiendung PDF</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GC_PS_DEVICE_TYP_SHORT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Ausgabegerät ZAF_OUT_PS</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GC_PS_FILE_TYP</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Dateiendung PS</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GC_SAP_DEVICE_MAIL</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Ausgabemedium</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GC_SAP_DEVICE_PRINTER</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Ausgabemedium</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GC_SAP_DEVICE_TELEFAX</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Ausgabemedium</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GC_SET_HEAD</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Setkopf</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GC_SET_ITEM</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Setkomponente</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GC_SYID_P_SYSTEM</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>ABAP-Systemfeld: Name des SAP-Systems</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GC_SYID_Q_SYSTEM</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>ABAP-Systemfeld: Name des SAP-Systems</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GC_SYID_T_SYSTEM</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>ABAP-Systemfeld: Name des SAP-Systems</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

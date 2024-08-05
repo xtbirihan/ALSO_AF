@@ -1,0 +1,1074 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_MSAG" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <T100A>
+    <ARBGB>ZAF_CORE</ARBGB>
+    <MASTERLANG>D</MASTERLANG>
+    <STEXT>Adobe Forms - CORE Nachrichten</STEXT>
+   </T100A>
+   <I18N_LANGS>
+    <LANGU>D</LANGU>
+   </I18N_LANGS>
+   <T100T>
+    <T100T>
+     <SPRSL>D</SPRSL>
+     <ARBGB>ZAF_CORE</ARBGB>
+     <STEXT>Adobe Forms - CORE Nachrichten</STEXT>
+    </T100T>
+   </T100T>
+   <T100_TEXTS>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>000</MSGNR>
+     <TEXT>&gt;&gt;&gt; Logging und Exception Nachrichten &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>001</MSGNR>
+     <TEXT>Fehler bei Aktualisierung des Nachrichtenprotokolls.</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>002</MSGNR>
+     <TEXT>Event &amp;1 konnte nicht ausgelöst werden.</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>003</MSGNR>
+     <TEXT>Start Framework: Aufruf Enhancement</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>004</MSGNR>
+     <TEXT>Aufruf über Selectionscreen mit VKORG &amp; und Channel &amp;.</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>005</MSGNR>
+     <TEXT>Aufruf über Nachrichtenart &amp;.</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>006</MSGNR>
+     <TEXT>Framework erfolgreich durchlaufen.</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>007</MSGNR>
+     <TEXT>Aufruf CONTROLLER Instanziierung</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>008</MSGNR>
+     <TEXT>Ausnahme zcx_af_core_output aufgetreten.</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>009</MSGNR>
+     <TEXT>Keine Archivschlüssel zu Buchungskreis &amp;1 und Schlüssel &amp;2 gefunden.</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>010</MSGNR>
+     <TEXT>Archivschlüssel ermittelt: Dokumentart &amp;1, Archiv-ID &amp;2.</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>011</MSGNR>
+     <TEXT>Keine Formular ID zu Buchungskreis &amp; und Schlüssel &amp; gefunden.</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>012</MSGNR>
+     <TEXT>Formular ID ermittelt: &amp;</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>050</MSGNR>
+     <TEXT>&gt;&gt;&gt; COREOUTPUT-KLASSE &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>051</MSGNR>
+     <TEXT>Fehler bei Objekterzeugung for Organisationsdaten.</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>052</MSGNR>
+     <TEXT>Zu VKORG &amp;1 und Formular &amp;2 wurden keine Org.-Daten gefunden.</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>053</MSGNR>
+     <TEXT>Keine organisationsdaten zum Schlüssel &amp;1 gefunden.</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>054</MSGNR>
+     <TEXT>Kein Logo unter dem Namen &amp;1 gefunden.</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>055</MSGNR>
+     <TEXT>Die Übersetzungsstruktur wurde im DDIC nicht gefunden.</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>056</MSGNR>
+     <TEXT>Das Übersetzungsobjekt konnte nicht erzeugt werden.</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>057</MSGNR>
+     <TEXT>Ausgabeparameter für Formulargenerierung nicht ausreichend gefüllt.</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>058</MSGNR>
+     <TEXT>Formular-Baustein zu Formular &amp;1 konnte nicht ermittelt werden.</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>059</MSGNR>
+     <TEXT>FP_JOB_OPEN zu &amp;1 konnte nicht ausgeführt werden.</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>060</MSGNR>
+     <TEXT>Formular-Baustein &amp;1 ist fehlgeschlagen.</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>061</MSGNR>
+     <TEXT>FP_JOB_CLOSE zu &amp;1 konnte nicht ausgeführt werden.</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>062</MSGNR>
+     <TEXT>Zur Adressnummer &amp;1 wurde keine Adresse gefunden.</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>063</MSGNR>
+     <TEXT>Kein Text zu &amp; in Sprache &amp; gefunden.</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>064</MSGNR>
+     <TEXT>Adresse &amp; wurde erfolgreiche gefunden.</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>065</MSGNR>
+     <TEXT>Fehler beim Initialisieren des Mailobjektes.</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>066</MSGNR>
+     <TEXT>Fehler beim Setzen des Mailbetreffs.</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>067</MSGNR>
+     <TEXT>Fehler beim Setzen des Mailbodys.</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>068</MSGNR>
+     <TEXT>Fehler beim Anhängen des PDFs an Mail.</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>069</MSGNR>
+     <TEXT>Fehler beim Konvertieren des Mailversenders: &amp;.</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>070</MSGNR>
+     <TEXT>Fehler beim Setzen des Mailversenders: &amp;.</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>071</MSGNR>
+     <TEXT>Fehler beim Konvertieren des Mailempfängers: &amp;.</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>072</MSGNR>
+     <TEXT>Fehler beim Setzen des Mailempfängers: &amp;.</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>073</MSGNR>
+     <TEXT>Fehler beim Setzen des Mailinhalts.</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>074</MSGNR>
+     <TEXT>Fehler bei der Aufforderung des sofortigen Sendens.</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>075</MSGNR>
+     <TEXT>Fehler beim Senden der Mail.</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>076</MSGNR>
+     <TEXT>Fehler beim Initialisieren des Faxobjektes.</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>077</MSGNR>
+     <TEXT>Fehler beim Übergeben des PDFs.</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>078</MSGNR>
+     <TEXT>Fehler beim Erstellen des Empfängers aus Land &amp; und Nummer &amp;.</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>079</MSGNR>
+     <TEXT>Fehler beim Setzen des Faxinhaltes.</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>080</MSGNR>
+     <TEXT>Fehler beim Setzen des Faxversenders.</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>081</MSGNR>
+     <TEXT>Fehler beim Erstellen des Faxversenders.</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>082</MSGNR>
+     <TEXT>Fehler beim Setzen des Faxempfängers.</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>083</MSGNR>
+     <TEXT>Fehler beim Versenden des Faxobjektes.</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>084</MSGNR>
+     <TEXT>Fax wurde nicht an alle Empfänger versendet. Bitte TA SOST prüfen.</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>085</MSGNR>
+     <TEXT>Archivobjekt konnte nicht abgelegt werden. Fehlercode &amp;.</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>086</MSGNR>
+     <TEXT>Archivverbindung konnte nicht hergestellt werden. Fehlercode &amp;.</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>087</MSGNR>
+     <TEXT>Im Label-Connector wurde die Methode CONTROLL_ZPL_DATA_ &amp; nicht gefunden.</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>088</MSGNR>
+     <TEXT>Fehler bei Konvertierung des PDF-Strings ins Tabellenformat.</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>089</MSGNR>
+     <TEXT>Fehler beim ermitteln der Adresse mit Filter: &amp;</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>090</MSGNR>
+     <TEXT>Logischer Dateiname &amp; konnte nicht gefunden werden.</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>091</MSGNR>
+     <TEXT>Fehler bei INSERT in Tabelle ZAF_OUT_INFO</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>092</MSGNR>
+     <TEXT>Mit der Adressnummer &amp; konnte kein Firmenname ermittelt werden.</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>093</MSGNR>
+     <TEXT>Text &amp; mit ID &amp; und Objekt &amp; in Sprache &amp; nicht gefunden</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>100</MSGNR>
+     <TEXT>&gt;&gt;&gt; CORE-CONNECT-KLASSEN &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>101</MSGNR>
+     <TEXT>Fehler beim Erzeugen der ADS-Verbindung mit DEST: &amp;1.</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>102</MSGNR>
+     <TEXT>Beim Erstellen des DATASETS ist ein Fehler aufgetreten.</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>103</MSGNR>
+     <TEXT>Der Transfer des PDF-Datenstroms ist fehlgeschlagen.</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>104</MSGNR>
+     <TEXT>Beim Schließen des DATASETS ist ein Fehler aufgetreten.</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>105</MSGNR>
+     <TEXT>Druckbestätigung konnte nicht ausgeführt werden.</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>106</MSGNR>
+     <TEXT>Beim Abschließen des Druckauftrags ist ein Fehler aufgetreten.</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>107</MSGNR>
+     <TEXT>Kanal: &amp; wird nicht gefunden.</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>200</MSGNR>
+     <TEXT>&gt;&gt;&gt; HELFER-KLASSEN &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>201</MSGNR>
+     <TEXT>Logo konnte nicht aus MIME-Repo. geladen werden.</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>202</MSGNR>
+     <TEXT>Kommunikationsdaten können nur für PERNR mit ADRNR ermittelt werden.</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>203</MSGNR>
+     <TEXT>Zur Ermittlung der Kommunikationsdaten fehlt IM_RECEIVER_COUNTRY.</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>300</MSGNR>
+     <TEXT>&gt;&gt;&gt; CONTROLLER-KLASSE &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>301</MSGNR>
+     <TEXT>Für VKORG &amp;1 konnte Applikation &amp;2 kein Formular ermitteln.</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>303</MSGNR>
+     <TEXT>Keine VKORG an CONTROLLER übergeben.</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>304</MSGNR>
+     <TEXT>Fehler beim Versenden der E-Mail.</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>369</MSGNR>
+     <TEXT>Das Dokument konnte nicht verschickt werden</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>370</MSGNR>
+     <TEXT>Ungültige Email-Adresse des Empfängers</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>371</MSGNR>
+     <TEXT>Ungültiger Benutzername des Empfängers</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>372</MSGNR>
+     <TEXT>Zu viele Empfänger</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>373</MSGNR>
+     <TEXT>Dokument wurde nicht versendet</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>374</MSGNR>
+     <TEXT>Dokumententyp existiert nicht</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>375</MSGNR>
+     <TEXT>Keine Berechtigung für die Operation</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>376</MSGNR>
+     <TEXT>Parameter Fehler</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>377</MSGNR>
+     <TEXT>X Fehler</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>378</MSGNR>
+     <TEXT>Einreihungsfehler</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>379</MSGNR>
+     <TEXT>Fehler: Kein Empfänger für das versenden angegeben</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>380</MSGNR>
+     <TEXT>Fehler: Hinzufügen eines Mailempfängers</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>381</MSGNR>
+     <TEXT>Fehler: Hinzufügen eines Mailkopieempfängers</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>382</MSGNR>
+     <TEXT>Fehler: Hinzufügen der Betreffzeile</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>383</MSGNR>
+     <TEXT>Fehler: Hinzufügen eines Meldungstextes</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>384</MSGNR>
+     <TEXT>Fehler: Hinzufügen eines Dateianhangs</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>385</MSGNR>
+     <TEXT>Fehler: Hinzufügen eines Antwortempfängers</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>386</MSGNR>
+     <TEXT>Keine Daten zu den Selektions Optionen in der MVKE ermittelt!</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>387</MSGNR>
+     <TEXT>Es mussten keine Materialien angepasst werden.</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>388</MSGNR>
+     <TEXT>HTTP Kommunikationsfehler</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>389</MSGNR>
+     <TEXT>Importparameter ist leer: Klasse &amp; Methode &amp; Parametername &amp;.</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>390</MSGNR>
+     <TEXT>Fehler aufgetreten: &amp; &amp; &amp; &amp;.</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>391</MSGNR>
+     <TEXT>Text zum Type &amp; in Sprachen &amp; und &amp; nicht gefunden!</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>392</MSGNR>
+     <TEXT>Interner Fehler bei Suche des Textes zum Typen!</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>393</MSGNR>
+     <TEXT>Text in Sprache &amp;1 und &amp;2 ist nicht gepflegt!</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>394</MSGNR>
+     <TEXT>Zeilenbreite in Text-Header ungültig</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>395</MSGNR>
+     <TEXT>Textformat kann nicht verarbeitet werden</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>396</MSGNR>
+     <TEXT>Kommunikationsfehler</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>397</MSGNR>
+     <TEXT>Der Langtext darf nicht verändert oder gelöscht werden</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>398</MSGNR>
+     <TEXT>Zur Kombination Position &amp;1 und Manum &amp;2 gibt es keine Textreferenz.</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>399</MSGNR>
+     <TEXT>Position &amp;1 wurde nicht gefunden.</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>400</MSGNR>
+     <TEXT>Zur Kombination Position &amp;1 und Aknum &amp;2 gibt es keine Textreferenz.</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>401</MSGNR>
+     <TEXT>Zur Kombination Position &amp;1 und Urnum &amp;2 gibt es keine Textreferenz.</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>402</MSGNR>
+     <TEXT>Maßnahme &amp;1 wurde nicht gefunden.</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>403</MSGNR>
+     <TEXT>Aktion &amp;1 wurde nicht gefunden.</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>404</MSGNR>
+     <TEXT>Ursache &amp;1 für Position &amp;2 wurde nicht gefunden.</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>405</MSGNR>
+     <TEXT>Maßnahme &amp;1 zur Position &amp;2 existiert bereits.</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>406</MSGNR>
+     <TEXT>Aktion &amp;1 zur Posiiton &amp;2 existiert bereits.</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>407</MSGNR>
+     <TEXT>Ursache &amp;1 zur Position &amp;2 existiert bereits.</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>408</MSGNR>
+     <TEXT>Kein Text zur Position &amp;1 und Aknum &amp;2 gefunden.</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>409</MSGNR>
+     <TEXT>Kein Text zur Position &amp;1 und Urnum &amp;2 gefunden.</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>410</MSGNR>
+     <TEXT>Kein Text zur Position &amp;1 und Manum &amp;2 gefunden.</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>411</MSGNR>
+     <TEXT>Kein Text zur Position &amp;1 gefunden.</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>412</MSGNR>
+     <TEXT>Intervall nicht gefunden</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>413</MSGNR>
+     <TEXT>Nummernkreis ist nicht intern</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>414</MSGNR>
+     <TEXT>Objekt nicht in TNRO definiert</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>415</MSGNR>
+     <TEXT>Anzahl der verlangten Nummern muß größer 0 sein</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>416</MSGNR>
+     <TEXT>Anzahl der verlangten Nummern muß 1 sein</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>417</MSGNR>
+     <TEXT>Intervall aufgebraucht, kein Umschlag möglich</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>418</MSGNR>
+     <TEXT>Buffer ist voll</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>419</MSGNR>
+     <TEXT>Es konnte kein Textobjekt ermittelt werden.</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>420</MSGNR>
+     <TEXT>Fehler beim Lesen des Verzeichnisses</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>421</MSGNR>
+     <TEXT>Fehler beim Lesen der Dateiattribute</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>422</MSGNR>
+     <TEXT>Datei kann nicht geschrieben werden</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>423</MSGNR>
+     <TEXT>Frontend-Funktion im Batch nicht ausführbar.</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>424</MSGNR>
+     <TEXT>falsches Frontend</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>425</MSGNR>
+     <TEXT>Ungültiger Wert für Parameter FILETYPE</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>426</MSGNR>
+     <TEXT>Keine Berechtigung für Download</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>427</MSGNR>
+     <TEXT>Unbekannter Fehler</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>428</MSGNR>
+     <TEXT>Header ist nicht zulässig.</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>429</MSGNR>
+     <TEXT>Separator ist nicht zulässig.</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>430</MSGNR>
+     <TEXT>Angabe der Dateigröße nicht zulässig.</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>431</MSGNR>
+     <TEXT>Die Headerinformation ist zur Zeit auf maximal 1023 Bytes be</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>432</MSGNR>
+     <TEXT>DataProvider kann nicht erzeugt werden</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>433</MSGNR>
+     <TEXT>Fehler beim Senden der Daten durch DP</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>434</MSGNR>
+     <TEXT>Fehler beim Schreiben der Daten durch DP</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>435</MSGNR>
+     <TEXT>Fehler beim Aufruf des Dataprovider</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>436</MSGNR>
+     <TEXT>Zugriff auf Datei nicht erlaubt.</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>437</MSGNR>
+     <TEXT>Nicht genug Speicher im Dataprovider</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>438</MSGNR>
+     <TEXT>Speichermedium ist voll.</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>439</MSGNR>
+     <TEXT>Timeout des Dataproviders</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>440</MSGNR>
+     <TEXT>Datei konnte nicht gefunden werden.</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>441</MSGNR>
+     <TEXT>Allgemeiner Ausnahmefehler im Dataprovider &amp; &amp; &amp; &amp;</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>442</MSGNR>
+     <TEXT>Fehler im Controlframework.</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>443</MSGNR>
+     <TEXT>Nicht unterstützt von GUI</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>444</MSGNR>
+     <TEXT>GUI nicht verfügbar</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>445</MSGNR>
+     <TEXT>Löschen der Datei fehlgeschlagen</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>446</MSGNR>
+     <TEXT>Controlfehler</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>447</MSGNR>
+     <TEXT>wrong parameter</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>448</MSGNR>
+     <TEXT>keine Berechtigung zum Ausführen des ext. Kommandos</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>449</MSGNR>
+     <TEXT>Kommandoname ist nicht definiert</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>450</MSGNR>
+     <TEXT>Parameter länger als 128 Zeichen</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>451</MSGNR>
+     <TEXT>Ausführung aus Sicherheitsgründen abgelehnt.</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>452</MSGNR>
+     <TEXT>Prüfbaustein nicht vorhanden</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>453</MSGNR>
+     <TEXT>Fehler beim Starten des externen Kommandos</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>454</MSGNR>
+     <TEXT>Returncode des ext. Programms fehlerhaft</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>455</MSGNR>
+     <TEXT>reserviert</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>456</MSGNR>
+     <TEXT>keine zusätzlichen Argumente angegeben</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>457</MSGNR>
+     <TEXT>unzulässsige Parameter</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>458</MSGNR>
+     <TEXT>illegales Kommando</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>459</MSGNR>
+     <TEXT>Inkonsistentes Interface. Prüfen Sie die DDIC-Struktur!</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>460</MSGNR>
+     <TEXT>Programm Fehler.</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>461</MSGNR>
+     <TEXT>Datenreferenz ist initial.</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>462</MSGNR>
+     <TEXT>Generate Subpool dir ist voll.</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>463</MSGNR>
+     <TEXT>Anzeige konnte nicht aufgefrischt werden.</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>464</MSGNR>
+     <TEXT>Fehler beim Erzeugen des Containerobjektes (&amp;1)</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>465</MSGNR>
+     <TEXT>Fehler beim Erzeugen des ALV GRID Objektes(&amp;1)</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>466</MSGNR>
+     <TEXT>Fehler beim Aufruf der Methode SET_TABLE_FOR_FIRST_DISPLAY(&amp;1).</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>467</MSGNR>
+     <TEXT>Das genannte Berechtigungsobjekt wird noch nicht verwendet.</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>468</MSGNR>
+     <TEXT>Fehlende Berechtigung für &amp;1: &amp;2.</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>469</MSGNR>
+     <TEXT>Fehlende Berechtigung für &amp;1: &amp;2 &amp;3.</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>470</MSGNR>
+     <TEXT>Berechtigungsobjekt &amp;1 benötigt Berechtigungsparameter &amp;2.</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>471</MSGNR>
+     <TEXT>Datei wurde nicht gefunden.</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>472</MSGNR>
+     <TEXT>Es wurden keine Daten gefunden!</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>473</MSGNR>
+     <TEXT>Es wurde keine dyn. SQL-Anweisung angelegt!</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>474</MSGNR>
+     <TEXT>Drucker konnte nicht zugeordnet werden!</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>475</MSGNR>
+     <TEXT>Darstellung des ALV&apos;s nicht möglich!</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>476</MSGNR>
+     <TEXT>Wird vom GUI nicht unterstützt.</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>477</MSGNR>
+     <TEXT>Konvertierung fehlgeschlagen.</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>478</MSGNR>
+     <TEXT>Kein Pfad angegeben!</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>479</MSGNR>
+     <TEXT>Es konnte keine Materialnummer ermittelt werden.</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>480</MSGNR>
+     <TEXT>ABAP Klasse &amp;CLASS_NAME&amp; nicht vorhanden.</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>481</MSGNR>
+     <TEXT>Fehler beim SO10 Text auslesen.</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>482</MSGNR>
+     <TEXT>Fehler beim umwandeln des SO10 Textes in HTML Text.</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>483</MSGNR>
+     <TEXT>Fehler beim versenden der E-Mail / Fehlertyp: &amp;1.</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>484</MSGNR>
+     <TEXT>Fehler beim umbenennen der Datei: &amp;1</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>485</MSGNR>
+     <TEXT>ABAP Klasse &amp;1 nicht gefunden.</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>486</MSGNR>
+     <TEXT>Datei &amp;1 nicht gefunden.</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>487</MSGNR>
+     <TEXT>Fehler in Methode &amp;1.</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>488</MSGNR>
+     <TEXT>Fehler beim setzen des Mailtextes aus Tab.</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>489</MSGNR>
+     <TEXT>Fehler bei Absender über Adressnummer ermitteln</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>490</MSGNR>
+     <TEXT>Fehler bei Absender über Personalnummer ermitteln</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>491</MSGNR>
+     <TEXT>Fehler bei Absender über Anwendernamen ermitteln.</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>492</MSGNR>
+     <TEXT>Keine DDIC Struktur gefunden.</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>493</MSGNR>
+     <TEXT>Fehler beim Zuweisen eines Feldsymbols.</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>494</MSGNR>
+     <TEXT>Fehlendes Objekt.</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>495</MSGNR>
+     <TEXT>GUI Download des Anhanghangs schlug fehl.</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>496</MSGNR>
+     <TEXT>Lokaler Speicherplatz konnte nicht ermittelt werden.</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>497</MSGNR>
+     <TEXT>Fehler beim Konvertieren von &amp; in ein Währungsfeld.</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>498</MSGNR>
+     <TEXT>E-Mail erfolgreich an &amp;1 gesendet!</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>499</MSGNR>
+     <TEXT>Absender &amp;1 konnte nicht gesetzt werden.</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>500</MSGNR>
+     <TEXT>&gt;&gt;&gt; AFCORE CLASSES &lt;&lt;&lt;</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>501</MSGNR>
+     <TEXT>Error: &amp; &amp; &amp; &amp;.</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>502</MSGNR>
+     <TEXT>Intern. error &amp; &amp; &amp; &amp;</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>503</MSGNR>
+     <TEXT>open development</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>504</MSGNR>
+     <TEXT>&amp; &amp; &amp; &amp;</TEXT>
+    </item>
+    <item>
+     <SPRSL>D</SPRSL>
+     <MSGNR>999</MSGNR>
+     <TEXT>&amp; &amp; &amp; &amp;</TEXT>
+    </item>
+   </T100_TEXTS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

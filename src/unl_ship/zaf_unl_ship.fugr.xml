@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>Unload shipments</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>SAPLZAF_UNL_SHIP</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZAF_UNL_SHIP_PRINT</FUNCNAME>
+     <SHORT_TEXT>Unload Shipments / print label</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IV_VKORG</PARAMETER>
+       <DEFAULT>&apos;1010&apos;</DEFAULT>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>VKORG</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_LGNUM</PARAMETER>
+       <DEFAULT>&apos;DE50&apos;</DEFAULT>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>/SCWM/LGNUM</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IT_HU</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>ZCL_AF_UNL_SHIP=&gt;TT_HU</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_REF</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>ZCL_AF_UNL_SHIP=&gt;TV_REF</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_DATE</PARAMETER>
+       <DEFAULT>SY-DATUM</DEFAULT>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>SYDATUM</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_TIME</PARAMETER>
+       <DEFAULT>SY-UZEIT</DEFAULT>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>SYUZEIT</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_USER</PARAMETER>
+       <DEFAULT>SY-UNAME</DEFAULT>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>SYUNAME</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_LANE</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>ZCL_AF_UNL_SHIP=&gt;TV_LANE</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_IS</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>ZCL_AF_UNL_SHIP=&gt;TV_IS</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_LAST_HU</PARAMETER>
+       <DEFAULT>ABAP_OFF</DEFAULT>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>BOOLEAN</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_PREVIEW</PARAMETER>
+       <DEFAULT>ABAP_OFF</DEFAULT>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>BOOLEAN</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>EV_SUBRC</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>SYSUBRC</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IV_VKORG</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Sales Organization</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_LGNUM</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Warehouse Number/Warehouse Complex</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IT_HU</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Handling Units</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_REF</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Reference</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_DATE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>System Date</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_TIME</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>System Time</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_USER</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>User Name</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_LANE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Lane</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_IS</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Shipment number</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_LAST_HU</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>last hu of shipment</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_PREVIEW</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>preview</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EV_SUBRC</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Return Code</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

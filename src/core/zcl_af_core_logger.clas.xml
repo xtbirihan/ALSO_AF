@@ -1,0 +1,235 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZCL_AF_CORE_LOGGER</CLSNAME>
+    <LANGU>D</LANGU>
+    <DESCRIPT>Adobe Forms - Logger</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CMPNAME>ADD_LOG</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>add log</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>DISPLAY_LOG_DATA_FULLSCREEN</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Show log entries in full-screen dialog</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>DISPLAY_LOG_DATA_MODAL</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Show log entries in the modal dialog</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>EXPORT_TO_TABLE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Export the log data table</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GC_GENERIC_MSGNO</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Generische Message mit 4 Variablen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_AUTOSAVE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Get Auto Fuse Flag</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_INSTANCE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>get instance</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GV_LOGLEVEL</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Maximales Loglevel, dass geloggt wird</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>NAST_PROTOCOL_UPDATE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>NAST PROTOCOL UPDATE</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>SAVE_LOG</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Back up log entries</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>SET_AUTOSAVE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Set Auto Fuse Flag</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>WRITE_LOG</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Create and save your own log entry</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>WRITE_LOG_OOP</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Create and save your own log entry</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+   <DESCRIPTIONS_SUB>
+    <SEOSUBCOTX>
+     <CMPNAME>ADD_LOG</CMPNAME>
+     <SCONAME>IV_TYPE</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Anwendungs-Log: Fehlerschwere einer Meldung (A,E,W,I,S)</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>ADD_LOG</CMPNAME>
+     <SCONAME>RO_LOGGER</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Adobe Forms - Logger</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>ADD_LOG</CMPNAME>
+     <SCONAME>ZCX_AF_CORE_OUTPUT</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Adobe Forms - Zentrale Fehlerklasse</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_INSTANCE</CMPNAME>
+     <SCONAME>IV_AUTO_SAVE</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Logs automatisch sichern JA / NEIN</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_INSTANCE</CMPNAME>
+     <SCONAME>IV_DESC</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Identifikation (dritte Stufe)</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_INSTANCE</CMPNAME>
+     <SCONAME>IV_LOGLEVEL</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>&apos;1&apos;=Nur Fehler, &apos;4&apos;=Alles loggen</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_INSTANCE</CMPNAME>
+     <SCONAME>IV_OBJECT</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Oberobjekt (erste Stufe)</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_INSTANCE</CMPNAME>
+     <SCONAME>IV_SUBOBJECT</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Unterobjekt (zweite Stufe)</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_INSTANCE</CMPNAME>
+     <SCONAME>IV_UPDATE_NAST_PROTOCOL</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>&apos;X&apos; = NAST Protokoll wird geupdatet</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_INSTANCE</CMPNAME>
+     <SCONAME>RO_LOGGER</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Rückgabe des Logger Objekts</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>NAST_PROTOCOL_UPDATE</CMPNAME>
+     <SCONAME>IV_MSGID</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>ABAP-Systemfeld: Nachrichtenklasse</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>NAST_PROTOCOL_UPDATE</CMPNAME>
+     <SCONAME>IV_MSGNO</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>ABAP-Systemfeld: Nachrichtennummer</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>NAST_PROTOCOL_UPDATE</CMPNAME>
+     <SCONAME>IV_MSGTY</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>ABAP-Systemfeld: Nachrichtentyp</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>NAST_PROTOCOL_UPDATE</CMPNAME>
+     <SCONAME>IV_MSGV1</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>ABAP-Systemfeld: Nachrichtenvariable</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>NAST_PROTOCOL_UPDATE</CMPNAME>
+     <SCONAME>IV_MSGV2</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>ABAP-Systemfeld: Nachrichtenvariable</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>NAST_PROTOCOL_UPDATE</CMPNAME>
+     <SCONAME>IV_MSGV3</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>ABAP-Systemfeld: Nachrichtenvariable</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>NAST_PROTOCOL_UPDATE</CMPNAME>
+     <SCONAME>IV_MSGV4</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>ABAP-Systemfeld: Nachrichtenvariable</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>WRITE_LOG</CMPNAME>
+     <SCONAME>IO_MSG</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Sammlung und Ausgabe von Meldungen</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>WRITE_LOG</CMPNAME>
+     <SCONAME>IV_EXT_IDENT</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Anwendungs-Log: Externe Identifikation</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>WRITE_LOG</CMPNAME>
+     <SCONAME>IV_OBJECT</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Anwendungs-Log: Objektname (Applikationskürzel)</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>WRITE_LOG</CMPNAME>
+     <SCONAME>IV_SUBOBJECT</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Anwendungs-Log: Unterobjekt</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>WRITE_LOG_OOP</CMPNAME>
+     <SCONAME>IO_MSG</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Sammlung und Ausgabe von Meldungen</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>WRITE_LOG_OOP</CMPNAME>
+     <SCONAME>IV_EXT_IDENT</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Anwendungs-Log: Externe Identifikation</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>WRITE_LOG_OOP</CMPNAME>
+     <SCONAME>IV_OBJECT</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Anwendungs-Log: Objektname (Applikationskürzel)</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>WRITE_LOG_OOP</CMPNAME>
+     <SCONAME>IV_SUBOBJECT</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Anwendungs-Log: Unterobjekt</DESCRIPT>
+    </SEOSUBCOTX>
+   </DESCRIPTIONS_SUB>
+  </asx:values>
+ </asx:abap>
+</abapGit>

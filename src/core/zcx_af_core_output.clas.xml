@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZCX_AF_CORE_OUTPUT</CLSNAME>
+    <LANGU>D</LANGU>
+    <DESCRIPT>Adobe Forms - Zentrale Fehlerklasse</DESCRIPT>
+    <CATEGORY>40</CATEGORY>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <SOTR>
+    <item>
+     <HEADER>
+      <CONCEPT>2E2DCE645E851EE8998ABB00038EC803</CONCEPT>
+      <CREA_LAN>D</CREA_LAN>
+      <TRALA_TYPE>1</TRALA_TYPE>
+      <OBJID_VEC>CA==</OBJID_VEC>
+     </HEADER>
+     <ENTRIES>
+      <SOTR_TEXT>
+       <CONCEPT>2E2DCE645E851EE8998ABB00038EC803</CONCEPT>
+       <LANGU>D</LANGU>
+       <LFD_NUM>0001</LFD_NUM>
+       <FLAG_CNTXT>X</FLAG_CNTXT>
+       <STATUS>R</STATUS>
+       <LENGTH>255</LENGTH>
+      </SOTR_TEXT>
+     </ENTRIES>
+    </item>
+   </SOTR>
+   <SOTR_USE>
+    <SOTR_USE>
+     <PGMID>LIMU</PGMID>
+     <OBJECT>CPUB</OBJECT>
+     <OBJ_NAME>ZCX_AF_CORE_OUTPUT</OBJ_NAME>
+     <CONCEPT>2E2DCE645E851EE8998ABB00038EC803</CONCEPT>
+     <LFD_NUM>0001</LFD_NUM>
+    </SOTR_USE>
+   </SOTR_USE>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>CONSTRUCTOR</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+   <DESCRIPTIONS_SUB>
+    <SEOSUBCOTX>
+     <CMPNAME>RAISE</CMPNAME>
+     <SCONAME>IS_T100KEY</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>T100 Schlüssel mit Abbildung der Parameter auf Attributnamen</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>RAISE</CMPNAME>
+     <SCONAME>IV_EVENTID</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Ereignisse der Hintergrundverarbeitung</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>RAISE</CMPNAME>
+     <SCONAME>IV_LOG_OBJECT</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Anwendungs-Log: Objektname (Applikationskürzel)</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>RAISE</CMPNAME>
+     <SCONAME>IV_MSGID</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Nachrichtenidentifikation</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>RAISE</CMPNAME>
+     <SCONAME>IV_MSGNO</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Nachrichtennummer</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>RAISE</CMPNAME>
+     <SCONAME>IV_MSGTY</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Messageart</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>RAISE</CMPNAME>
+     <SCONAME>IV_MSGV1</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Nachrichtenvariable 1</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>RAISE</CMPNAME>
+     <SCONAME>IV_MSGV2</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Nachrichtenvariable 2</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>RAISE</CMPNAME>
+     <SCONAME>IV_MSGV3</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Nachrichtenvariable 3</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>RAISE</CMPNAME>
+     <SCONAME>IV_MSGV4</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Nachrichtenvariable 4</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>RAISE</CMPNAME>
+     <SCONAME>IV_PARAMETER</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Parameter eines Batch-Events (z.B. Jobname/Jobcount )</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>RAISE</CMPNAME>
+     <SCONAME>IV_TEXTID</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Schlüssel zum logischen Objekt im OTR</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>RAISE</CMPNAME>
+     <SCONAME>ZCX_AF_CORE_OUTPUT</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Adobe Forms - Zentrale Fehlerklasse</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>RAISE_EVENT</CMPNAME>
+     <SCONAME>IV_EVENTID</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Ereignisse der Hintergrundverarbeitung</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>RAISE_EVENT</CMPNAME>
+     <SCONAME>IV_LOG_OBJECT</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Anwendungs-Log: Objektname (Applikationskürzel)</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>RAISE_EVENT</CMPNAME>
+     <SCONAME>IV_PARAMETER</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Parameter eines Batch-Events (z.B. Jobname/Jobcount )</DESCRIPT>
+    </SEOSUBCOTX>
+   </DESCRIPTIONS_SUB>
+  </asx:values>
+ </asx:abap>
+</abapGit>

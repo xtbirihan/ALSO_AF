@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZCL_AF_CORE_ADRS_LOADER</CLSNAME>
+    <LANGU>D</LANGU>
+    <DESCRIPT>Adobe Forms - Adressensteuerung</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CMPNAME>ADD_ADRS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Add Address</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>ADD_ADRS_FROM_TABLE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Address from the TAB. add</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>ADD_LINE_TO_ADRS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Add a single row to instance table.</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>CHANGE_ADRS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Change address contents</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>CONSTRUCTOR</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>DELETE_EMPTY_LINES</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Delete empty address lines at the end</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_ADRS_LINE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Determine address in a field</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_ADRS_STRUCTURE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Determine Address Structure</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_ADRS_TABLE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Determine Address Table</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_INSTANCE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Determining the ADRS_Loaders</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GT_ADRS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Adresstabelle für Formularausgabe</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GV_LOG_OBJECT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Anwendungs-Log: Objektname (Applikationskürzel)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>READ_ADRS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Replace in address</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>REPLACE_IN_ADRS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Find and replace in the address</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+   <DESCRIPTIONS_SUB>
+    <SEOSUBCOTX>
+     <CMPNAME>ADD_ADRS</CMPNAME>
+     <SCONAME>ZCX_AF_CORE_OUTPUT</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Adobe Forms - Zentrale Fehlerklasse</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>ADD_ADRS_FROM_TABLE</CMPNAME>
+     <SCONAME>IS_ADRS_PARAMS</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Text Loader - Zusatzparameter</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>ADD_ADRS_FROM_TABLE</CMPNAME>
+     <SCONAME>IT_ADRS_LINES</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Tabellentyp für Adresszeilen</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>ADD_ADRS_FROM_TABLE</CMPNAME>
+     <SCONAME>ZCX_AF_CORE_OUTPUT</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Adobe Forms - Zentrale Fehlerklasse</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>ADD_LINE_TO_ADRS</CMPNAME>
+     <SCONAME>IV_LINE</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Anschriftszeile</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>ADD_LINE_TO_ADRS</CMPNAME>
+     <SCONAME>ZCX_AF_CORE_OUTPUT</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Adobe Forms - Zentrale Fehlerklasse</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CHANGE_ADRS</CMPNAME>
+     <SCONAME>CS_ADRS_PRINT</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Adresse in aufbereiteter Form (maximal 10 Zeilen)</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CHANGE_ADRS</CMPNAME>
+     <SCONAME>IV_SPRAS</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Sprachenschlüssel</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <SCONAME>IV_LOG_OBJECT</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Anwendungs-Log: Objektname (Applikationskürzel)</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>DELETE_EMPTY_LINES</CMPNAME>
+     <SCONAME>CT_ADDRESSLINES</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Tabellentyp für Adresszeilen</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_ADRS_LINE</CMPNAME>
+     <SCONAME>IV_DELETE_ADRS_ENTRY</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Adresse aus Adresstabelle nach Übertragung löschen</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_ADRS_LINE</CMPNAME>
+     <SCONAME>IV_FILTER</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Filter</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_ADRS_LINE</CMPNAME>
+     <SCONAME>IV_KEY1</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Key1</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_ADRS_LINE</CMPNAME>
+     <SCONAME>IV_SEPARATOR</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Trennzeichen zwischen den Adresszeilen</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_ADRS_LINE</CMPNAME>
+     <SCONAME>RV_ADRS</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Name und Adresse des Geschäftspartners</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_ADRS_STRUCTURE</CMPNAME>
+     <SCONAME>IV_DELETE_ADRS_ENTRY</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Adresse aus Adresstabelle nach Übertragung löschen</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_ADRS_STRUCTURE</CMPNAME>
+     <SCONAME>IV_FILTER</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Filter</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_ADRS_STRUCTURE</CMPNAME>
+     <SCONAME>RS_ADRS</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Adresse in aufbereiteter Form (maximal 10 Zeilen)</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_ADRS_TABLE</CMPNAME>
+     <SCONAME>RT_ADRS</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Tab.Typ Adress Loader</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_INSTANCE</CMPNAME>
+     <SCONAME>IV_LOG_OBJECT</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Anwendungs-Log: Objektname (Applikationskürzel)</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_INSTANCE</CMPNAME>
+     <SCONAME>RO_ADRS_LOADER</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Adobe Forms - Adressensteuerung</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_INSTANCE</CMPNAME>
+     <SCONAME>ZCX_AF_CORE_OUTPUT</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Adobe Forms - Zentrale Fehlerklasse</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>READ_ADRS</CMPNAME>
+     <SCONAME>IS_ADRS_KEY</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Keys für Adressaufbereitung</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>READ_ADRS</CMPNAME>
+     <SCONAME>RS_ADDRESS_PRINTFORM</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Aufbereitete Adresse (Typ 1,2,3)</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>READ_ADRS</CMPNAME>
+     <SCONAME>ZCX_AF_CORE_OUTPUT</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Adobe Forms - Zentrale Fehlerklasse</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>REPLACE_IN_ADRS</CMPNAME>
+     <SCONAME>CS_ADRS_PRINT</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Adresse in aufbereiteter Form (maximal 10 Zeilen)</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>REPLACE_IN_ADRS</CMPNAME>
+     <SCONAME>IV_FIND_STR</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Suchstring</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>REPLACE_IN_ADRS</CMPNAME>
+     <SCONAME>IV_REPLACE_STR</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Ersetzenstring</DESCRIPT>
+    </SEOSUBCOTX>
+   </DESCRIPTIONS_SUB>
+  </asx:values>
+ </asx:abap>
+</abapGit>

@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZCL_AF_CORE_CONTROLLER</CLSNAME>
+    <LANGU>D</LANGU>
+    <DESCRIPT>Adobe Forms - Abstrakter Dispatch</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>CONSTRUCTOR</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>CREATE_CHANNEL_REFS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Creates the connector instances with parameterization</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>CREATE_CORE_PARAMS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Compiles the CORE parameters</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>CREATE_OUTPUT_CLASS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>&lt;&lt;&lt; Instantiates the specialized output class</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>DELIVER_ALL</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Delivers all transferred forms</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GENERATE_ALL</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Generates all relevant forms</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GO_OUTPUT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Spez. Output Klasse</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GS_CORE_PARAMS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>CORE Parametrisierung</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GV_SPEC_FORM_NAME</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Formularname</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GV_SPEC_OUTPUT_CLASS_NAME</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Klassenname der spez. Output Klasse</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GV_VKORG</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>VKORG für den CORE</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>IS_ORG_DATA_UNIQUE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Checks whether all transferred org data keys are the same</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>PROCESS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Triggers the delivery of forms</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+   <DESCRIPTIONS_SUB>
+    <SEOSUBCOTX>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <SCONAME>IS_COMM_VALUES</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Typen für die Kommunikationsstrategien</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <SCONAME>IS_DOCPARAMS</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Formularverarbeitung Formularparameter</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <SCONAME>IS_EXTENDED_PARAMS</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Adobe Forms - Ausgabestruktur Erweiterung</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <SCONAME>IS_OUTPUTPARAMS</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Formularprozessierung Ausgabeparameter</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <SCONAME>IV_LOG_OBJECT</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Anwendungs-Log: Objektname (Applikationskürzel)</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <SCONAME>IV_VKORG</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Verkaufsorganisation</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <SCONAME>ZCX_AF_CORE_OUTPUT</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Adobe Forms - Zentrale Fehlerklasse</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CREATE_CHANNEL_REFS</CMPNAME>
+     <SCONAME>ET_CHANNEL_REFS</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>TTYP: Kanal Referenzen</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CREATE_CHANNEL_REFS</CMPNAME>
+     <SCONAME>ZCX_AF_CORE_OUTPUT</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Adobe Forms - Zentrale Fehlerklasse</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CREATE_OUTPUT_CLASS</CMPNAME>
+     <SCONAME>EO_SPEC_OUTPUT_CLASS</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Adobe Forms - Ausgabeklasse</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CREATE_OUTPUT_CLASS</CMPNAME>
+     <SCONAME>ZCX_AF_CORE_OUTPUT</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Adobe Forms - Zentrale Fehlerklasse</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>DELIVER_ALL</CMPNAME>
+     <SCONAME>ZCX_AF_CORE_OUTPUT</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Adobe Forms - Zentrale Fehlerklasse</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GENERATE_ALL</CMPNAME>
+     <SCONAME>ZCX_AF_CORE_OUTPUT</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Adobe Forms - Zentrale Fehlerklasse</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>IS_ORG_DATA_UNIQUE</CMPNAME>
+     <SCONAME>RV_IS_UNIQUE</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>&apos;X&apos; = Org. Daten sind gleich bei allen Connectoren</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>PROCESS</CMPNAME>
+     <SCONAME>ZCX_AF_CORE_OUTPUT</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Adobe Forms - Zentrale Fehlerklasse</DESCRIPT>
+    </SEOSUBCOTX>
+   </DESCRIPTIONS_SUB>
+  </asx:values>
+ </asx:abap>
+</abapGit>

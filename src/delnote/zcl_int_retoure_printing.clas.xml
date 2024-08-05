@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZCL_INT_RETOURE_PRINTING</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>Handling of delivery printing</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>CONSTRUCTOR</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>CV_LOG_OBJECT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Application log: Object name (Application code)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_ADRNR_AG</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Adressnumber / Customer</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_ADRS_DATA</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Get adress data</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_ADRS_RETOURE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Get adress data / RETOURE</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_ADRS_SENDER</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Get adress data / Sender</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_DOC_RET_FNAME</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>get document reoute form name</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_HEADER_DATA</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Get header data</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_LOGO</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Get logo / postmark</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_ORG_DATA</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Get organosations data</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_POS_DATA</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Get Positions data</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_SAMPLE_PRINT_OUT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Get sample print out</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_TEXTS_ZEW1</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Get texts / Formular ZEW1</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_TEXTS_ZHTP</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Get texts / Formular ZHTP</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_TEXTS_ZVT1</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Get texts / Formular ZVT1</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_TRANSLATIONS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Get translations</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>IS_DOC_RET_OK</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>is print document retoure</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>MV_FORM</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Smart Forms: Form Name</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>PREPARE_TEXT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Prepare text</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>PRINT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Print</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>PRINT_RETOURE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Print document retoure</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+   <DESCRIPTIONS_SUB>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_ADRNR_AG</CMPNAME>
+     <SCONAME>RV_ADRNR</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Address</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_ADRS_DATA</CMPNAME>
+     <SCONAME>IV_ADRNR</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Address Number</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_DOC_RET_FNAME</CMPNAME>
+     <SCONAME>RV_FORMNAME</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Smart Forms: Form Name</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_LOGO</CMPNAME>
+     <SCONAME>EV_PICTURE</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Binary Document Content</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_LOGO</CMPNAME>
+     <SCONAME>IV_LOGNAME</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Name</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>IS_DOC_RET_OK</CMPNAME>
+     <SCONAME>RV_DOC_RET</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Boolean Variable (X = True, - = False, Space = Unknown)</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>PREPARE_TEXT</CMPNAME>
+     <SCONAME>CH_TEXT</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Smart Forms: Text</DESCRIPT>
+    </SEOSUBCOTX>
+   </DESCRIPTIONS_SUB>
+  </asx:values>
+ </asx:abap>
+</abapGit>

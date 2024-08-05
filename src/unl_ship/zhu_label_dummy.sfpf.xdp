@@ -1,0 +1,617 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xfa generator="AdobeLiveCycleDesigner_V11.0.1.20160812.1.925753_SAP" APIVersion="3.6.16186.0"?><xdp:xdp xmlns:xdp="http://ns.adobe.com/xdp/" timeStamp="2023-05-17T10:53:15Z" uuid="cf76e76e-4a3f-48ff-88d9-1f415faae03f">
+<template xmlns:xliff="urn:oasis:names:tc:xliff:document:1.1" xmlns="http://www.xfa.org/schema/xfa-template/2.8/">
+   <tags xmlns="http://www.xfa.org/schema/xfa-xliff/1.0/" xmlns:xft-xliff="http://www.xfa.org/schema/xfa-xliff/1.0/" xmlns:xhtml="http://www.w3.org/1999/xhtml"><value id="N122">HU Label</value><value id="N152">Print Repeat</value><value id="N155">Barcode</value><value id="N185">Bar code</value><value id="N211">HU:</value><value id="N268">Repeat Print</value><value id="N273">Handling Unit</value><value id="N358">Handling Unit</value></tags>
+   <?formServer allowRenderCaching 0?>
+   <?formServer formModel both?>
+   <?formServer defaultPDFRenderFormat acrobat9.0static?>
+   <subform layout="tb" locale="ambient" name="data" w="175mm">
+      <pageSet name="Master_Page">
+         <pageArea id="Page1" name="Page1">
+            <contentArea h="68.9997mm" id="Content_area_ID" name="Content_area" w="100.0003mm"/>
+            <medium long="70mm" short="100mm" stock="custom"/>
+            <?templateDesigner expand 1?></pageArea>
+         <?templateDesigner expand 1?></pageSet>
+      <subform layout="tb" name="Body" w="100mm">
+         <bind match="none"/>
+         <breakAfter/>
+         <subform columnWidths="100.0002mm" layout="table" name="TB_LABEL">
+            <border>
+               <edge presence="hidden" stroke="dashDotDot"/>
+               <edge presence="hidden"/>
+               <edge presence="hidden"/>
+               <edge presence="hidden" stroke="dashDot"/>
+               <corner presence="hidden" stroke="dashDotDot"/>
+               <corner presence="hidden"/>
+               <corner presence="hidden"/>
+               <corner presence="hidden" stroke="dashDot"/>
+            </border>
+            <subform layout="row" name="Row">
+               <assist role="TR"/>
+               <subform h="68.958mm" name="SF_LABEL" w="136.353mm">
+                  <bind match="none"/>
+                  <field access="readOnly" h="3.528mm" hAlign="center" name="HU_IDENT_CHECK" presence="invisible" w="2.09mm" x="71mm">
+                     <ui>
+                        <textEdit>
+                           <border presence="hidden">
+                              <?templateDesigner StyleID aped0?></border>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font typeface="Arial"/>
+                     <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                     <para spaceBelow="0pt" vAlign="middle"/>
+                     <caption reserve="0mm">
+                        <para spaceBelow="0pt" vAlign="middle"/>
+                     </caption>
+                     <bind match="dataRef" ref="$.HUIDENT"/>
+                     <assist>
+                        <speak priority="toolTip" xliff:rid="A7E0C060-406B-4E3E-A485-3C91A30CA20E">Handling Unit</speak>
+                        <toolTip xliff:rid="43A901BC-7DEF-4B63-972E-31409B1D514B">Handling Unit Group</toolTip>
+                     </assist>
+                     <?digestForSAP digest="b98665778c220187a1659bb863b31621"?>
+                     <event activity="initialize" name="event__initialize">
+                        <script runAt="both">
+//if (HasValue($)) then
+//  DATA.SF_HU_IDENT.presence = "visible";
+//  DATA.SF_TITLE_ADMIN.presence = "hidden";
+//endif
+</script>
+                     </event>
+                  </field>
+                  <subform h="8mm" name="SF_HEADER" w="99.999mm">
+                     <bind match="none"/>
+                     <draw h="6.472mm" name="HU_DUMMY_LABEL" w="64mm" x="3.999mm">
+                        <ui>
+                           <textEdit/>
+                        </ui>
+                        <value>
+                           <text xmlns:xft-xliff="http://www.xfa.org/schema/xfa-xliff/1.0/" xft-xliff:id="N122" xliff:rid="N122">HU Dummy Label</text>
+                        </value>
+                        <font size="16pt" typeface="Arial" weight="bold"/>
+                        <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0.5mm"/>
+                        <assist>
+                           <speak disable="1"/>
+                        </assist>
+                        <?renderCache.bounds 181417 16929 0 0 0 1417 0 0?>
+                        <?renderCache.textRun 14 HU Dummy Label 0 0 14050 0 0 0 "Arial" 1 0 16000 ISO-8859-1?></draw>
+                     <field access="readOnly" anchorType="bottomLeft" hAlign="right" minH="2mm" name="TIME" w="8mm" x="90.882mm" y="2.45mm">
+                        <ui>
+                           <textEdit>
+                              <border presence="hidden">
+                                 <?templateDesigner StyleID aped0?></border>
+                              <margin/>
+                           </textEdit>
+                        </ui>
+                        <font size="6pt" typeface="Arial"/>
+                        <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                        <para spaceBelow="0pt" vAlign="middle"/>
+                        <caption reserve="0mm">
+                           <para spaceBelow="0pt" vAlign="middle"/>
+                           <value>
+                              <text xmlns:xft-xliff="http://www.xfa.org/schema/xfa-xliff/1.0/" xft-xliff:id="N211"/>
+                           </value>
+                        </caption>
+                        <bind match="dataRef" ref="$.ZZ_TIME"/>
+                        <assist>
+                           <speak xmlns:xft-xliff="http://www.xfa.org/schema/xfa-xliff/1.0/" priority="toolTip" xft-xliff:id="N273" xliff:rid="021A699F-C24A-4847-A8E7-C1BD5D6F5555">Handling Unit</speak>
+                           <toolTip xmlns:xft-xliff="http://www.xfa.org/schema/xfa-xliff/1.0/" xft-xliff:id="N358" xliff:rid="E26587B3-DB89-4AB8-86C3-90B630373243">Date</toolTip>
+                        </assist>
+                        <?digestForSAP digest="b98665778c220187a1659bb863b31621"?>
+                        <value>
+                           <text maxChars="5" xliff:rid="935E8170-AB39-4B4C-AEAE-F24DAFDE1D13">13:25</text>
+                        </value>
+                     </field>
+                     <field access="readOnly" anchorType="bottomLeft" minH="2mm" name="DATE" w="15mm" x="74.999mm" y="2.45mm">
+                        <ui>
+                           <textEdit>
+                              <border presence="hidden">
+                                 <?templateDesigner StyleID aped0?></border>
+                              <margin/>
+                           </textEdit>
+                        </ui>
+                        <font size="6pt" typeface="Arial"/>
+                        <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                        <para spaceBelow="0pt" vAlign="middle"/>
+                        <caption reserve="0mm">
+                           <para spaceBelow="0pt" vAlign="middle"/>
+                           <value>
+                              <text xmlns:xft-xliff="http://www.xfa.org/schema/xfa-xliff/1.0/" xft-xliff:id="N211" xliff:rid="BCC93ADF-2F4A-4E84-9BA8-EBEC31FA9B94"/>
+                           </value>
+                        </caption>
+                        <bind match="dataRef" ref="$.ZZ_DATE"/>
+                        <assist>
+                           <speak xmlns:xft-xliff="http://www.xfa.org/schema/xfa-xliff/1.0/" priority="toolTip" xft-xliff:id="N273" xliff:rid="F4E0F996-185D-481F-9AA3-9F5C725CFB36">Handling Unit</speak>
+                           <toolTip xmlns:xft-xliff="http://www.xfa.org/schema/xfa-xliff/1.0/" xft-xliff:id="N358" xliff:rid="C28A30DD-D10E-43B1-9B63-DBF0775ACF1E">Date</toolTip>
+                        </assist>
+                        <?digestForSAP digest="b98665778c220187a1659bb863b31621"?>
+                        <value>
+                           <text xliff:rid="785D7188-1DC7-49E1-A45E-FD22425B95CE">28.03.2023</text>
+                        </value>
+                     </field>
+                     <border>
+                        <edge presence="hidden"/>
+                        <edge presence="hidden"/>
+                        <edge thickness="0.3mm"/>
+                        <edge presence="hidden"/>
+                        <corner/>
+                        <corner/>
+                        <corner thickness="0.3mm"/>
+                        <corner/>
+                     </border>
+                     <field access="readOnly" anchorType="middleLeft" minH="2mm" name="TERMINAL" w="25.028mm" x="74.971mm" y="3.6mm">
+                        <ui>
+                           <textEdit>
+                              <border presence="hidden">
+                                 <?templateDesigner StyleID aped0?></border>
+                              <margin/>
+                           </textEdit>
+                        </ui>
+                        <font size="6pt" typeface="Arial"/>
+                        <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                        <para spaceBelow="0pt" vAlign="middle"/>
+                        <caption reserve="0mm">
+                           <para spaceBelow="0pt" vAlign="middle"/>
+                           <value>
+                              <text xmlns:xft-xliff="http://www.xfa.org/schema/xfa-xliff/1.0/" xft-xliff:id="N211"/>
+                           </value>
+                        </caption>
+                        <bind match="dataRef" ref="$.ZZ_TERMINAL"/>
+                        <assist>
+                           <speak xmlns:xft-xliff="http://www.xfa.org/schema/xfa-xliff/1.0/" priority="toolTip" xft-xliff:id="N273" xliff:rid="E1B9A034-1565-4E2D-A8A4-67300D3B395F">Handling Unit</speak>
+                           <toolTip xmlns:xft-xliff="http://www.xfa.org/schema/xfa-xliff/1.0/" xft-xliff:id="N358" xliff:rid="48591D8E-092B-4587-B71A-11099AE08472">Date</toolTip>
+                        </assist>
+                        <?digestForSAP digest="b98665778c220187a1659bb863b31621"?>
+                        <value>
+                           <text xliff:rid="E46D4E39-F13D-4D1B-B8BE-627BF9108939">TERMINAL</text>
+                        </value>
+                     </field>
+                     <field access="readOnly" minH="2mm" name="CREATED_BY" w="25.028mm" x="74.971mm" y="4.8mm">
+                        <ui>
+                           <textEdit>
+                              <border presence="hidden">
+                                 <?templateDesigner StyleID aped0?></border>
+                              <margin/>
+                           </textEdit>
+                        </ui>
+                        <font size="6pt" typeface="Arial"/>
+                        <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                        <para spaceBelow="0pt" vAlign="middle"/>
+                        <caption reserve="0mm">
+                           <para spaceBelow="0pt" vAlign="middle"/>
+                           <value>
+                              <text xmlns:xft-xliff="http://www.xfa.org/schema/xfa-xliff/1.0/" xft-xliff:id="N211"/>
+                           </value>
+                        </caption>
+                        <bind match="dataRef" ref="$.CREATED_BY"/>
+                        <assist>
+                           <speak xmlns:xft-xliff="http://www.xfa.org/schema/xfa-xliff/1.0/" priority="toolTip" xft-xliff:id="N273" xliff:rid="D7B9EFA7-AF5E-4E79-9810-DE178FD70E11">Handling Unit</speak>
+                           <toolTip xmlns:xft-xliff="http://www.xfa.org/schema/xfa-xliff/1.0/" xft-xliff:id="N358" xliff:rid="EB9BEEED-E34D-404B-9017-5E3A1E373665">Date</toolTip>
+                        </assist>
+                        <?digestForSAP digest="b98665778c220187a1659bb863b31621"?>
+                        <value>
+                           <text xliff:rid="F5305D27-B0A7-46ED-94F7-87AEF2B4C3D7">USER-NAME</text>
+                        </value>
+                     </field>
+                     <?templateDesigner expand 1?></subform>
+                  <subform h="60.999mm" hAlign="center" name="DATA" w="100mm" y="8mm">
+                     <bind match="none"/>
+                     <subform h="21mm" name="SF_HU_IDENT" w="99mm" y="1.285mm">
+                        <bind match="none"/>
+                        <field access="readOnly" h="15mm" name="HU_IDENT_BARCODE" w="70.006mm" x="3.902mm" y="0mm">
+                           <ui>
+                              <barcode dataLength="10" textLocation="none" type="code3Of9" wideNarrowRatio="3.0"/>
+                           </ui>
+                           <font typeface="Arial New"/>
+                           <bind match="dataRef" ref="$.HUIDENT"/>
+                           <assist>
+                              <speak xmlns:xft-xliff="http://www.xfa.org/schema/xfa-xliff/1.0/" priority="toolTip" xft-xliff:id="N155" xliff:rid="N155">Barcode</speak>
+                              <toolTip xmlns:xft-xliff="http://www.xfa.org/schema/xfa-xliff/1.0/" xft-xliff:id="N185" xliff:rid="N185">Bar code</toolTip>
+                           </assist>
+                           <?digestForSAP digest="9ce57727c6d152abe36e4795faa9282c"?>
+                           <value>
+                              <text xliff:rid="7AC154FB-0A3B-4F4D-8459-6E4F5770163B">1234567890</text>
+                           </value>
+                        </field>
+                        <field access="readOnly" minH="5mm" name="HU_IDENT_TEXT" w="70.006mm" x="4mm" y="15.001mm">
+                           <ui>
+                              <textEdit>
+                                 <border presence="hidden">
+                                    <?templateDesigner StyleID aped0?></border>
+                                 <margin/>
+                              </textEdit>
+                           </ui>
+                           <font size="14pt" typeface="Arial"/>
+                           <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                           <para spaceBelow="0pt" vAlign="middle"/>
+                           <caption reserve="0mm">
+                              <para spaceBelow="0pt" vAlign="middle"/>
+                              <value>
+                                 <text xmlns:xft-xliff="http://www.xfa.org/schema/xfa-xliff/1.0/" xft-xliff:id="N211" xliff:rid="BA557209-2B1E-40C3-83F1-10DAF1179AD2"/>
+                              </value>
+                           </caption>
+                           <bind match="dataRef" ref="$.HUIDENT"/>
+                           <assist>
+                              <speak xmlns:xft-xliff="http://www.xfa.org/schema/xfa-xliff/1.0/" priority="toolTip" xft-xliff:id="N273" xliff:rid="32A07A11-B116-4A4F-855C-EB723CCE06FB">Handling Unit</speak>
+                              <toolTip xmlns:xft-xliff="http://www.xfa.org/schema/xfa-xliff/1.0/" xft-xliff:id="N358" xliff:rid="11E507AE-5A42-4371-9AEC-7959CA412189">Handling Unit Group</toolTip>
+                           </assist>
+                           <?digestForSAP digest="b98665778c220187a1659bb863b31621"?>
+                           <value>
+                              <text xliff:rid="93E599C9-C5FF-43BB-ABFA-FD89F7324F32">1234567890</text>
+                           </value>
+                        </field>
+                        <?templateDesigner expand 1?></subform>
+                     <subform h="19mm" name="SF_TITLE_ADMIN" presence="hidden" w="100.012mm" y="2.285mm">
+                        <bind match="none"/>
+                        <?templateDesigner expand 0?>
+                        <field access="readOnly" hAlign="center" minH="18mm" name="TITLE_ADMIN" w="92mm" x="4mm" y="0.7mm">
+                           <ui>
+                              <textEdit>
+                                 <border presence="hidden">
+                                    <?templateDesigner StyleID aped0?></border>
+                                 <margin/>
+                              </textEdit>
+                           </ui>
+                           <font size="32pt" typeface="Arial" weight="bold"/>
+                           <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                           <para spaceBelow="0pt" vAlign="middle"/>
+                           <caption reserve="0mm">
+                              <para spaceBelow="0pt" vAlign="middle"/>
+                              <value>
+                                 <text xmlns:xft-xliff="http://www.xfa.org/schema/xfa-xliff/1.0/" xft-xliff:id="N211"/>
+                              </value>
+                           </caption>
+                           <bind match="none"/>
+                           <assist>
+                              <speak xmlns:xft-xliff="http://www.xfa.org/schema/xfa-xliff/1.0/" priority="toolTip" xft-xliff:id="N273" xliff:rid="4CA9BE7B-4C05-4044-A027-43FAE2403B4D">Handling Unit</speak>
+                              <toolTip xmlns:xft-xliff="http://www.xfa.org/schema/xfa-xliff/1.0/" xft-xliff:id="N358" xliff:rid="2034329F-326E-4E42-91A8-2C0E4C4FF4FF">Handling Unit Group</toolTip>
+                           </assist>
+                           <?digestForSAP digest="b98665778c220187a1659bb863b31621"?>
+                           <value>
+                              <text xliff:rid="2C347CB1-AE8A-4580-AA8F-816335B925E8">For Admin Office</text>
+                           </value>
+                        </field>
+                     </subform>
+                     <subform h="8.235mm" name="SF_IDENT_R" w="100mm" y="22.285mm">
+                        <bind match="none"/>
+                        <field access="readOnly" minH="8mm" name="IDENT_R" w="96.001mm" x="3.999mm" y="0.049mm">
+                           <ui>
+                              <textEdit>
+                                 <border presence="hidden">
+                                    <?templateDesigner StyleID aped0?></border>
+                                 <margin/>
+                              </textEdit>
+                           </ui>
+                           <font size="11pt" typeface="Arial" weight="bold"/>
+                           <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                           <para spaceBelow="0pt" vAlign="middle"/>
+                           <caption reserve="0mm">
+                              <para spaceBelow="0pt" vAlign="middle"/>
+                              <value>
+                                 <text xmlns:xft-xliff="http://www.xfa.org/schema/xfa-xliff/1.0/" xft-xliff:id="N211" xliff:rid="N211"/>
+                              </value>
+                           </caption>
+                           <bind match="dataRef" ref="$.ZZ_IDENT_R"/>
+                           <assist>
+                              <speak xmlns:xft-xliff="http://www.xfa.org/schema/xfa-xliff/1.0/" priority="toolTip" xft-xliff:id="N273" xliff:rid="F13FC4FD-D892-4197-A796-963BE63F783C">Handling Unit</speak>
+                              <toolTip xmlns:xft-xliff="http://www.xfa.org/schema/xfa-xliff/1.0/" xft-xliff:id="N358" xliff:rid="44E375C8-5EE0-41F9-8EE4-1716752E7B87">Ident R</toolTip>
+                           </assist>
+                           <?digestForSAP digest="b98665778c220187a1659bb863b31621"?>
+                           <value>
+                              <text xliff:rid="354EE478-86CF-4070-BB99-AD815EDB627F">Ident R ( random text )</text>
+                           </value>
+                        </field>
+                        <?templateDesigner expand 1?></subform>
+                     <subform h="7.81mm" name="SF_LGPLA" w="59.999mm" x="38mm" y="30.785mm">
+                        <bind match="none"/>
+                        <field access="readOnly" minH="7.761mm" name="LGPLA" w="59mm" x="0mm" y="0.049mm">
+                           <ui>
+                              <textEdit>
+                                 <border presence="hidden">
+                                    <?templateDesigner StyleID aped0?></border>
+                                 <margin/>
+                              </textEdit>
+                           </ui>
+                           <font size="22pt" typeface="Arial" weight="bold"/>
+                           <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                           <para spaceBelow="0pt" vAlign="middle"/>
+                           <caption reserve="0mm">
+                              <para spaceBelow="0pt" vAlign="middle"/>
+                              <value>
+                                 <text xmlns:xft-xliff="http://www.xfa.org/schema/xfa-xliff/1.0/" xft-xliff:id="N211" xliff:rid="4756EE3E-0813-4F3F-9624-B8DCA59A676F"/>
+                              </value>
+                           </caption>
+                           <bind match="dataRef" ref="$.LGPLA"/>
+                           <assist>
+                              <speak xmlns:xft-xliff="http://www.xfa.org/schema/xfa-xliff/1.0/" priority="toolTip" xft-xliff:id="N273" xliff:rid="3D77BE96-1536-43FB-9C3C-531984D05A34">Handling Unit</speak>
+                              <toolTip xmlns:xft-xliff="http://www.xfa.org/schema/xfa-xliff/1.0/" xft-xliff:id="N358" xliff:rid="78654193-1F0A-4996-9FBB-F741993FECD3">LgPla</toolTip>
+                           </assist>
+                           <?digestForSAP digest="b98665778c220187a1659bb863b31621"?>
+                           <value>
+                              <text xliff:rid="65A30BB2-7B42-476A-8D52-CF1F9B53F059">STG1-A-999</text>
+                           </value>
+                        </field>
+                        <?templateDesigner expand 1?></subform>
+                     <subform h="8.037mm" name="SF_LGTYP" w="37mm" y="30.785mm">
+                        <bind match="none"/>
+                        <?templateDesigner expand 0?>
+                        <field access="readOnly" minH="6.988mm" name="LGTYP" w="33.001mm" x="3.999mm" y="0.049mm">
+                           <ui>
+                              <textEdit>
+                                 <border presence="hidden">
+                                    <?templateDesigner StyleID aped0?></border>
+                                 <margin/>
+                              </textEdit>
+                           </ui>
+                           <font size="22pt" typeface="Arial" weight="bold"/>
+                           <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                           <para spaceBelow="0pt" vAlign="middle"/>
+                           <caption reserve="0mm">
+                              <para spaceBelow="0pt" vAlign="middle"/>
+                              <value>
+                                 <text xmlns:xft-xliff="http://www.xfa.org/schema/xfa-xliff/1.0/" xft-xliff:id="N211" xliff:rid="94B0827F-4B8F-44C0-AEBE-783D5580EEF0"/>
+                              </value>
+                           </caption>
+                           <bind match="dataRef" ref="$.LGTYP"/>
+                           <assist>
+                              <speak xmlns:xft-xliff="http://www.xfa.org/schema/xfa-xliff/1.0/" priority="toolTip" xft-xliff:id="N273" xliff:rid="N273">Handling Unit</speak>
+                              <toolTip xmlns:xft-xliff="http://www.xfa.org/schema/xfa-xliff/1.0/" xft-xliff:id="N358" xliff:rid="N358">LgTyp</toolTip>
+                           </assist>
+                           <?digestForSAP digest="b98665778c220187a1659bb863b31621"?>
+                           <value>
+                              <text xliff:rid="D6D9D557-C026-40F3-B351-B93465E6DF0F">STG1</text>
+                           </value>
+                        </field>
+                     </subform>
+                     <subform h="15mm" name="SF_IDENT_I" w="95.979mm" y="39.285mm">
+                        <bind match="none"/>
+                        <subform h="15.129mm" name="SF_IDENT_I_BC" w="76mm" y="0mm">
+                           <bind match="none"/>
+                           <field access="readOnly" h="15mm" name="IDENT_I_BARCODE" w="55.002mm" x="3.998mm">
+                              <ui>
+                                 <barcode dataLength="10" textLocation="none" type="code3Of9" wideNarrowRatio="3.0"/>
+                              </ui>
+                              <font typeface="Arial New"/>
+                              <bind match="dataRef" ref="$.ZZ_IDENT_I"/>
+                              <assist>
+                                 <speak xmlns:xft-xliff="http://www.xfa.org/schema/xfa-xliff/1.0/" priority="toolTip" xft-xliff:id="N155" xliff:rid="5A5FD575-2223-4394-9CFA-9A43FA370034">Barcode</speak>
+                                 <toolTip xmlns:xft-xliff="http://www.xfa.org/schema/xfa-xliff/1.0/" xft-xliff:id="N185" xliff:rid="ED9B14EC-CDEE-4EBB-933A-34B285D9D3C6">Bar code</toolTip>
+                              </assist>
+                              <?digestForSAP digest="9ce57727c6d152abe36e4795faa9282c"?>
+                              <value>
+                                 <text xliff:rid="F38C9EC9-275D-4EE9-AF1B-D3746D1A310D">DE999999999999</text>
+                              </value>
+                           </field>
+                           <?templateDesigner expand 1?></subform>
+                        <?templateDesigner expand 0?></subform>
+                     <subform h="7mm" name="TF_IDENT_I_TXT" w="59.012mm" x="1mm" y="54.285mm">
+                        <bind match="none"/>
+                        <?templateDesigner expand 0?>
+                        <field access="readOnly" minH="5mm" name="IDENT_I_text" w="55mm" x="2.968mm" y="0mm">
+                           <ui>
+                              <textEdit>
+                                 <border presence="hidden">
+                                    <?templateDesigner StyleID aped0?></border>
+                                 <margin/>
+                              </textEdit>
+                           </ui>
+                           <font size="14pt" typeface="Arial"/>
+                           <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0.5mm"/>
+                           <para spaceBelow="0pt" vAlign="middle"/>
+                           <caption reserve="0mm">
+                              <para spaceBelow="0pt" vAlign="middle"/>
+                              <value>
+                                 <text xmlns:xft-xliff="http://www.xfa.org/schema/xfa-xliff/1.0/" xft-xliff:id="N211" xliff:rid="6CCF4E55-516C-4664-BF8A-A608FF2141BC"/>
+                              </value>
+                           </caption>
+                           <bind match="dataRef" ref="$.ZZ_IDENT_I"/>
+                           <assist>
+                              <speak xmlns:xft-xliff="http://www.xfa.org/schema/xfa-xliff/1.0/" priority="toolTip" xft-xliff:id="N273" xliff:rid="C59931DA-D427-4F00-99B6-6387E6BE7971">Handling Unit</speak>
+                              <toolTip xmlns:xft-xliff="http://www.xfa.org/schema/xfa-xliff/1.0/" xft-xliff:id="N358" xliff:rid="E29C82D5-09B7-4656-AC8B-1010A615D36E">Ident I</toolTip>
+                           </assist>
+                           <?digestForSAP digest="b98665778c220187a1659bb863b31621"?>
+                           <value>
+                              <text xliff:rid="FE95E59E-AC92-4C61-B7C2-3FB57B7C5F4C">DE999999999999</text>
+                           </value>
+                        </field>
+                     </subform>
+                     <?templateDesigner expand 1?></subform>
+                  <breakAfter/>
+                  <border>
+                     <edge presence="hidden"/>
+                     <corner presence="hidden" thickness="0.1778mm"/>
+                  </border>
+                  <?templateDesigner expand 1?></subform>
+               <border>
+                  <edge presence="hidden"/>
+               </border>
+               <bind match="dataRef" ref="$.HU_HEADER.DATA[*]"/>
+               <occur max="-1"/>
+               <?templateDesigner expand 1?></subform>
+            <?templateDesigner rowpattern first:1, next:1, firstcolor:f0f0f0, nextcolor:ffffff, apply:0?>
+            <bind match="none"/>
+            <?templateDesigner expand 1?></subform>
+         <?templateDesigner expand 1?></subform>
+      <?templateDesigner expand 1?>
+      <?renderCache.subset "Arial" 0 0 ISO-8859-1 4 96 24 001000110013001400150016001700180019001A001B001C001D002400270028002C002F003000310035003600370038-.0123456789:ADEILMNRSTU?>
+      <?renderCache.subset "Arial" 1 0 ISO-8859-1 4 116 29 0003000B000C00100014001C00240027002A002B002C002F00350036003700380044004500470048004F005000510052005500570058005B005C ()-19ADGHILRSTUabdelmnortuxy?>
+      <?renderCache.subset "Myriad Pro" 0 0 ISO-8859-1 4 48 12 001100120013001400150016001700180019001A002500260123456789DE?>
+   </subform>
+   <?templateDesigner Grid show:1, snap:1, units:17, color:ff8080, origin:(0,0), interval:(25000,25000)?>
+   <?templateDesigner DefaultLanguage FormCalc?>
+   <?templateDesigner DefaultRunAt client?>
+   <?templateDesigner DefaultPreviewType print?>
+   <?templateDesigner XDPPreviewFormat 1?>
+   <?originalXFAVersion http://www.xfa.org/schema/xfa-template/2.4/?>
+   <?templateDesigner FormTargetVersion 28?>
+   <?templateDesigner Rulers horizontal:1, vertical:1, guidelines:1, crosshairs:0?>
+   <?templateDesigner Zoom 224?></template>
+<config xmlns="http://www.xfa.org/schema/xci/2.8/">
+   <agent name="designer">
+      <!--  [0..n]  -->
+      <destination>pdf</destination>
+      <pdf>
+         <!--  [0..n]  -->
+         <fontInfo/>
+         <taggedMode>custom</taggedMode>
+      </pdf>
+      <common>
+         <template>
+            <base>https://vhaoiws1wd01.sap.also.app:44380/sap/bc/fp/form/layout/</base>
+         </template>
+      </common>
+   </agent>
+   <present>
+      <!--  [0..n]  -->
+      <pdf>
+         <!--  [0..n]  -->
+         <version>1.7</version>
+         <adobeExtensionLevel>3</adobeExtensionLevel>
+      </pdf>
+      <common>
+         <data>
+            <xsl>
+               <uri/>
+            </xsl>
+            <outputXSL>
+               <uri/>
+            </outputXSL>
+         </data>
+      </common>
+      <xdp>
+         <packets>*</packets>
+      </xdp>
+      <cache>
+         <macroCache/>
+      </cache>
+   </present>
+</config>
+<connectionSet xmlns="http://www.xfa.org/schema/xfa-connection-set/2.8/">
+   <xsdConnection dataDescription="data" name="ZHU_LABEL_DUMMY">
+      <uri/>
+      <rootElement>data</rootElement>
+   </xsdConnection>
+   <?originalXFAVersion http://www.xfa.org/schema/xfa-connection-set/2.1/?></connectionSet>
+<xfa:datasets xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/">
+   <xfa:data xfa:dataNode="dataGroup"/>
+   <dd:dataDescription xmlns:dd="http://ns.adobe.com/data-description/" dd:name="data">
+      <data>
+         <PRINT_PARAM>
+            <REPEAT_PRT/>
+         </PRINT_PARAM>
+         <HU_HEADER dd:minOccur="0">
+            <DATA dd:maxOccur="-1">
+               <HUIDENT/>
+               <CREATED_BY/>
+               <ZZ_IDENT_I/>
+               <ZZ_IDENT_R/>
+               <ZZ_TERMINAL/>
+               <ZZ_DATE/>
+               <ZZ_TIME/>
+               <LGTYP/>
+               <LGPLA/>
+            </DATA>
+         </HU_HEADER>
+      </data>
+   </dd:dataDescription>
+</xfa:datasets>
+<localeSet xmlns="http://www.xfa.org/schema/xfa-locale-set/2.7/">
+   <locale desc="English (United States)" name="en_US">
+      <calendarSymbols name="gregorian">
+         <monthNames>
+            <month>January</month>
+            <month>February</month>
+            <month>March</month>
+            <month>April</month>
+            <month>May</month>
+            <month>June</month>
+            <month>July</month>
+            <month>August</month>
+            <month>September</month>
+            <month>October</month>
+            <month>November</month>
+            <month>December</month>
+         </monthNames>
+         <monthNames abbr="1">
+            <month>Jan</month>
+            <month>Feb</month>
+            <month>Mar</month>
+            <month>Apr</month>
+            <month>May</month>
+            <month>Jun</month>
+            <month>Jul</month>
+            <month>Aug</month>
+            <month>Sep</month>
+            <month>Oct</month>
+            <month>Nov</month>
+            <month>Dec</month>
+         </monthNames>
+         <dayNames>
+            <day>Sunday</day>
+            <day>Monday</day>
+            <day>Tuesday</day>
+            <day>Wednesday</day>
+            <day>Thursday</day>
+            <day>Friday</day>
+            <day>Saturday</day>
+         </dayNames>
+         <dayNames abbr="1">
+            <day>Sun</day>
+            <day>Mon</day>
+            <day>Tue</day>
+            <day>Wed</day>
+            <day>Thu</day>
+            <day>Fri</day>
+            <day>Sat</day>
+         </dayNames>
+         <meridiemNames>
+            <meridiem>AM</meridiem>
+            <meridiem>PM</meridiem>
+         </meridiemNames>
+         <eraNames>
+            <era>BC</era>
+            <era>AD</era>
+         </eraNames>
+      </calendarSymbols>
+      <datePatterns>
+         <datePattern name="full">EEEE, MMMM D, YYYY</datePattern>
+         <datePattern name="long">MMMM D, YYYY</datePattern>
+         <datePattern name="med">MMM D, YYYY</datePattern>
+         <datePattern name="short">M/D/YY</datePattern>
+      </datePatterns>
+      <timePatterns>
+         <timePattern name="full">h:MM:SS A Z</timePattern>
+         <timePattern name="long">h:MM:SS A Z</timePattern>
+         <timePattern name="med">h:MM:SS A</timePattern>
+         <timePattern name="short">h:MM A</timePattern>
+      </timePatterns>
+      <dateTimeSymbols>GyMdkHmsSEDFwWahKzZ</dateTimeSymbols>
+      <numberPatterns>
+         <numberPattern name="numeric">z,zz9.zzz</numberPattern>
+         <numberPattern name="currency">$z,zz9.99|($z,zz9.99)</numberPattern>
+         <numberPattern name="percent">z,zz9%</numberPattern>
+      </numberPatterns>
+      <numberSymbols>
+         <numberSymbol name="decimal">.</numberSymbol>
+         <numberSymbol name="grouping">,</numberSymbol>
+         <numberSymbol name="percent">%</numberSymbol>
+         <numberSymbol name="minus">-</numberSymbol>
+         <numberSymbol name="zero">0</numberSymbol>
+      </numberSymbols>
+      <currencySymbols>
+         <currencySymbol name="symbol">$</currencySymbol>
+         <currencySymbol name="isoname">USD</currencySymbol>
+         <currencySymbol name="decimal">.</currencySymbol>
+      </currencySymbols>
+   </locale>
+   <?originalXFAVersion http://www.xfa.org/schema/xfa-locale-set/2.1/?></localeSet>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 4.2.1-c041 52.337767, 2008/04/13-15:41:00        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description xmlns:xmp="http://ns.adobe.com/xap/1.0/" xmlns:pdf="http://ns.adobe.com/pdf/1.3/" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/" rdf:about="">
+         <xmp:MetadataDate>2023-05-17T10:53:15Z</xmp:MetadataDate>
+         <xmp:CreatorTool>Adobe LiveCycle Designer 11.0</xmp:CreatorTool>
+         <pdf:Producer>Adobe LiveCycle Designer 11.0</pdf:Producer>
+         <xmpMM:DocumentID>uuid:cf76e76e-4a3f-48ff-88d9-1f415faae03f</xmpMM:DocumentID>
+      </rdf:Description>
+   </rdf:RDF>
+</x:xmpmeta></xdp:xdp>

@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZCL_AF_CORE_TEXT_MODULE</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>Text module read / save</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CMPNAME>CHANGE_TEXT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Change text</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>PREPARE_PLACEHOLDER</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Preparing placeholder variables</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+   <DESCRIPTIONS_SUB>
+    <SEOSUBCOTX>
+     <CMPNAME>CHANGE_TEXT</CMPNAME>
+     <SCONAME>CT_TEXTLINES</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Smart Forms: Text</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CHANGE_TEXT</CMPNAME>
+     <SCONAME>IT_KEY_VALUE</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Replacing variables in texts</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CHANGE_TEXT</CMPNAME>
+     <SCONAME>IV_PLACEHOLDER_ENDKEY</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Single-Character Flag</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CHANGE_TEXT</CMPNAME>
+     <SCONAME>IV_PLACEHOLDER_STARTKEY</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Single-Character Flag</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>PREPARE_PLACEHOLDER</CMPNAME>
+     <SCONAME>IT_KEY_VALUE</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Replacing variables in texts</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>PREPARE_PLACEHOLDER</CMPNAME>
+     <SCONAME>IV_PLACEHOLDER_ENDKEY</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Single-Character Flag</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>PREPARE_PLACEHOLDER</CMPNAME>
+     <SCONAME>IV_PLACEHOLDER_STARTKEY</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Single-Character Flag</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>PREPARE_PLACEHOLDER</CMPNAME>
+     <SCONAME>RT_KEY_VALUE</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Replacing variables in texts</DESCRIPT>
+    </SEOSUBCOTX>
+   </DESCRIPTIONS_SUB>
+  </asx:values>
+ </asx:abap>
+</abapGit>

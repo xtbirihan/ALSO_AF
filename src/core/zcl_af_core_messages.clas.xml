@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZCL_AF_CORE_MESSAGES</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>Output messages</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CMPNAME>ADD_MESSAGE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Add message</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>ADD_MESSAGES</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Add messages</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>ADD_MESSAGES_FROM_OBJECT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Add messages from object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>ADD_MESSAGE_DIRECT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Add Massages direct</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>ADD_NOTE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Add note</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_IT_MSG_TAB</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Get messages table</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_MESSAGES</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>get messages</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>RESET</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Reset</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+   <DESCRIPTIONS_SUB>
+    <SEOSUBCOTX>
+     <CMPNAME>ADD_MESSAGES_FROM_OBJECT</CMPNAME>
+     <SCONAME>IO_MSG</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Output messages</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>ADD_MESSAGE_DIRECT</CMPNAME>
+     <SCONAME>IV_ID</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Batch input message ID</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>ADD_MESSAGE_DIRECT</CMPNAME>
+     <SCONAME>IV_NR</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Batch input message number</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>ADD_MESSAGE_DIRECT</CMPNAME>
+     <SCONAME>IV_TYP</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Batch input message type</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>ADD_NOTE</CMPNAME>
+     <SCONAME>IV_MSGID</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Batch input message ID</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>ADD_NOTE</CMPNAME>
+     <SCONAME>IV_MSGNR</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Batch input message number</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>ADD_NOTE</CMPNAME>
+     <SCONAME>IV_MSGTYP</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Batch input message type</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>ADD_NOTE</CMPNAME>
+     <SCONAME>IV_NOTE</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Variable part of a message</DESCRIPT>
+    </SEOSUBCOTX>
+   </DESCRIPTIONS_SUB>
+  </asx:values>
+ </asx:abap>
+</abapGit>

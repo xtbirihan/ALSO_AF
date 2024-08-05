@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZCL_AF_CORE_ARCHIVE_DATA</CLSNAME>
+    <LANGU>D</LANGU>
+    <DESCRIPT>Adobe Forms - Archivdaten aus Archivierungsfehler</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>CONSTRUCTOR</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GS_ARCHIVE_ERR</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Adobe Forms - Archiv - Belegtabelle bei Archivierungsfehlern</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GT_PDF</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Binäre Daten einer Datei</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GV_ARCHIV_ID</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Content Repository Identifikation</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GV_ARC_DATE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>ABAP-Systemfeld: Aktuelles Datum des Applikationsservers</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GV_AR_OBJECT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Dokumentart</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GV_DOCUMENT_TYPE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>SAP ArchiveLink: Dokumenttyp</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GV_LENGTH</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Numerisches Feld 12</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GV_OBJECT_ID</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>SAP ArchiveLink: Dokument-Id</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GV_SAP_OBJECT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>SAP ArchiveLink: Objekttyp des Business Objekts</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GV_UNAME</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Benutzername</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+   <DESCRIPTIONS_SUB>
+    <SEOSUBCOTX>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <SCONAME>IT_PDF</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Binäre Daten einer Datei</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <SCONAME>IV_ARCHIV_ID</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Content Repository Identifikation</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <SCONAME>IV_ARC_DATE</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>ABAP-Systemfeld: Aktuelles Datum des Applikationsservers</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <SCONAME>IV_AR_OBJECT</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Dokumentart</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <SCONAME>IV_DOCUMENT_TYPE</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>SAP ArchiveLink: Dokumenttyp</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <SCONAME>IV_LENGTH</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Numerisches Feld 12</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <SCONAME>IV_OBJECT_ID</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>SAP ArchiveLink: Dokument-Id</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <SCONAME>IV_SAP_OBJECT</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>SAP ArchiveLink: Objekttyp des Business Objekts</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <SCONAME>IV_UNAME</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Benutzername</DESCRIPT>
+    </SEOSUBCOTX>
+   </DESCRIPTIONS_SUB>
+  </asx:values>
+ </asx:abap>
+</abapGit>

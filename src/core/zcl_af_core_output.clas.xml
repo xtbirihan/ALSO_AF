@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZCL_AF_CORE_OUTPUT</CLSNAME>
+    <LANGU>D</LANGU>
+    <DESCRIPT>Adobe Forms - Ausgabeklasse</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>CONSTRUCTOR</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>CREATE_CHANNEL_PARAMS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>&lt;&lt;&lt; Returns the desired channels+parameterisation</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GENERATE_FORM</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Call form module and return product</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_CORE_PARAMS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Return CORE document parameters</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_PRINT_DATA</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Obtain output data</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_PRINT_DATA_REF</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returns reference to CORE output data</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_PRINT_DATA_SPEC_REF</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>&lt;&lt;&lt;Returns references to spec. output data</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GS_DATA_CORE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>CORE-exklusive Daten</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GS_ORG_DATA_VALUES</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Adobe Forms - Organisationsdaten für die Ausgabe</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GT_OUTPUT_CTRL</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Steuerungstabelle für Ausgabeparameter</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GV_LOG_OBJECT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Anwendungs-Log: Objektname (Applikationskürzel)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>LOAD_ORG_DATA_VALUES</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Orga. - Obtain data</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>LOAD_OUTPUT_CTRL_PARAMS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Determine layout control parameters</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>LOAD_TRANSLATIONS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Procure translation</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>SET_ORG_DATA_VALUES</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Sets the Org. Data Values</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+   <DESCRIPTIONS_SUB>
+    <SEOSUBCOTX>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <SCONAME>IS_CORE_PARAMS</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Adobe Forms - Dok. Parameter für CORE-Output Klasse</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <SCONAME>IV_LOG_OBJECT</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Anwendungs-Log: Objektname (Applikationskürzel)</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <SCONAME>ZCX_AF_CORE_OUTPUT</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Adobe Forms - Zentrale Fehlerklasse</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CREATE_CHANNEL_PARAMS</CMPNAME>
+     <SCONAME>ZCX_AF_CORE_OUTPUT</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Adobe Forms - Zentrale Fehlerklasse</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GENERATE_FORM</CMPNAME>
+     <SCONAME>ES_FORMOUTPUT</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Formularausgabe (PDF, PDL)</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GENERATE_FORM</CMPNAME>
+     <SCONAME>IS_DOCPARAMS</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Formularverarbeitung Formularparameter</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GENERATE_FORM</CMPNAME>
+     <SCONAME>IS_OUTPUTPARAMS</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Formularprozessierung Ausgabeparameter</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GENERATE_FORM</CMPNAME>
+     <SCONAME>ZCX_AF_CORE_OUTPUT</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Adobe Forms - Zentrale Fehlerklasse</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_CORE_PARAMS</CMPNAME>
+     <SCONAME>ES_CORE_PARAMS</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Adobe Forms - Dok. Parameter für CORE-Output Klasse</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_PRINT_DATA</CMPNAME>
+     <SCONAME>ZCX_AF_CORE_OUTPUT</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Adobe Forms - Zentrale Fehlerklasse</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_PRINT_DATA_REF</CMPNAME>
+     <SCONAME>ZCX_AF_CORE_OUTPUT</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Adobe Forms - Zentrale Fehlerklasse</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_PRINT_DATA_SPEC_REF</CMPNAME>
+     <SCONAME>ZCX_AF_CORE_OUTPUT</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Adobe Forms - Zentrale Fehlerklasse</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>LOAD_ORG_DATA_VALUES</CMPNAME>
+     <SCONAME>IV_CHANNEL</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Adobe Forms - Ausgabekanal</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>LOAD_ORG_DATA_VALUES</CMPNAME>
+     <SCONAME>RS_ORG_DATA_VALUES</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Adobe Forms - Organisationsdaten für die Ausgabe</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>LOAD_ORG_DATA_VALUES</CMPNAME>
+     <SCONAME>ZCX_AF_CORE_OUTPUT</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Adobe Forms - Zentrale Fehlerklasse</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>LOAD_OUTPUT_CTRL_PARAMS</CMPNAME>
+     <SCONAME>ET_OUTPUT_CTRL</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Steuerungstabelle für Ausgabeparameter</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>LOAD_OUTPUT_CTRL_PARAMS</CMPNAME>
+     <SCONAME>IV_FORM_NAME</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Name eines Formularobjektes</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>LOAD_OUTPUT_CTRL_PARAMS</CMPNAME>
+     <SCONAME>IV_LOG_OBJECT</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Anwendungs-Log: Objektname (Applikationskürzel)</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>LOAD_OUTPUT_CTRL_PARAMS</CMPNAME>
+     <SCONAME>IV_VKORG</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Verkaufsorganisation</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>LOAD_TRANSLATIONS</CMPNAME>
+     <SCONAME>ZCX_AF_CORE_OUTPUT</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Adobe Forms - Zentrale Fehlerklasse</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SET_ORG_DATA_VALUES</CMPNAME>
+     <SCONAME>IS_ORG_DATA_VALUES</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Adobe Forms - Organisationsdaten für die Ausgabe</DESCRIPT>
+    </SEOSUBCOTX>
+   </DESCRIPTIONS_SUB>
+  </asx:values>
+ </asx:abap>
+</abapGit>

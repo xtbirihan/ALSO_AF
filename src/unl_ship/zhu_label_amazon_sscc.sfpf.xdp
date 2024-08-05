@@ -1,0 +1,1047 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xfa generator="AdobeLiveCycleDesigner_V11.0.1.20160812.1.925753_SAP" APIVersion="3.6.16186.0"?><xdp:xdp xmlns:xdp="http://ns.adobe.com/xdp/" timeStamp="2024-02-07T13:21:04Z" uuid="93af0fa0-ba10-40a5-8aae-96f45e41847a">
+<template xmlns:xliff="urn:oasis:names:tc:xliff:document:1.1" xmlns="http://www.xfa.org/schema/xfa-template/2.8/">
+   <tags xmlns="http://www.xfa.org/schema/xfa-xliff/1.0/" xmlns:xft-xliff="http://www.xfa.org/schema/xfa-xliff/1.0/" xmlns:xhtml="http://www.w3.org/1999/xhtml"><value id="N122">HU Label</value><value id="N152">Print Repeat</value><value id="N155">Barcode</value><value id="N185">Bar code</value><value id="N211">HU:</value><value id="N268">Repeat Print</value><value id="N273">Handling Unit</value><value id="N358">Handling Unit</value></tags>
+   <?formServer allowRenderCaching 0?>
+   <?formServer formModel both?>
+   <?formServer defaultPDFRenderFormat acrobat9.0static?>
+   <subform layout="tb" locale="ambient" name="data" w="175mm">
+      <pageSet name="Master_Page">
+         <pageArea id="Page1" name="Page1">
+            <contentArea h="180.0002mm" name="Content_area" w="99.9991mm"/>
+            <medium long="180mm" short="100mm" stock="custom"/>
+            <?templateDesigner expand 0?></pageArea>
+         <?templateDesigner expand 1?></pageSet>
+      <subform layout="tb" name="Body" w="100mm">
+         <bind match="none"/>
+         <?templateDesigner expand 1?></subform>
+      <proto/>
+      <subform h="180mm" name="Label" w="100mm">
+         <bind match="none"/>
+         <field anchorType="bottomLeft" h="2mm" name="CAUTION_OFF" w="2mm" x="2mm" y="2mm">
+            <ui>
+               <textEdit multiLine="1">
+                  <border presence="hidden"/>
+               </textEdit>
+            </ui>
+            <font size="4pt" typeface="Arial"/>
+            <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0.5mm"/>
+            <caption reserve="1.7103mm">
+               <value>
+                  <text xliff:rid="97897CFD-0226-4018-A4C1-2E08705DA506"/>
+               </value>
+            </caption>
+            <value>
+               <exData contentType="text/html"/>
+            </value>
+            <event activity="initialize" name="event__initialize">
+               <script>
+if (HasValue($)) then
+  data.Label.SF_CAUTION.presence = "hidden";
+endif
+</script>
+            </event>
+            <bind match="dataRef" ref="$.HU_HEADER.DATA[*].ZZ_VAR_01"/>
+         </field>
+         <field anchorType="bottomLeft" h="2mm" name="SINGLE_ASIN_OFF" w="2mm" x="6mm" y="2mm">
+            <ui>
+               <textEdit multiLine="1">
+                  <border presence="hidden"/>
+               </textEdit>
+            </ui>
+            <font size="4pt" typeface="Arial"/>
+            <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0.5mm"/>
+            <caption reserve="1.7103mm">
+               <value>
+                  <text xliff:rid="5A95A702-8E90-44E3-8F3C-CCD254C8DEBF"/>
+               </value>
+            </caption>
+            <value>
+               <exData contentType="text/html"/>
+            </value>
+            <event activity="initialize" name="event__initialize">
+               <script>
+if (HasValue($)) then
+  data.Label.SF_SINGLE_ASIN.presence = "hidden";
+endif
+</script>
+            </event>
+            <bind match="dataRef" ref="$.HU_HEADER.DATA[*].ZZ_VAR_02"/>
+         </field>
+         <field access="readOnly" h="3mm" id="floatingField000041" name="T_DATE" presence="hidden" w="62mm" x="0mm" y="0mm">
+            <ui>
+               <textEdit>
+                  <border>
+                     <edge stroke="lowered"/>
+                  </border>
+                  <margin/>
+               </textEdit>
+            </ui>
+            <font size="7pt" typeface="Arial"/>
+            <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+            <para vAlign="middle"/>
+            <bind match="dataRef" ref="$.HU_HEADER.DATA[*].ZZ_DATE"/>
+         </field>
+         <field access="readOnly" h="3mm" id="floatingField018467" name="T_TIME" presence="hidden" w="62mm" x="0mm" y="0mm">
+            <ui>
+               <textEdit>
+                  <border>
+                     <edge stroke="lowered"/>
+                  </border>
+                  <margin/>
+               </textEdit>
+            </ui>
+            <font size="7pt" typeface="Arial"/>
+            <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+            <para vAlign="middle"/>
+            <bind match="dataRef" ref="$.HU_HEADER.DATA[*].ZZ_TIME"/>
+            <value>
+               <text maxChars="5"/>
+            </value>
+         </field>
+         <draw h="3mm" name="Text1" w="24mm" x="75.999mm" y="1.75mm">
+            <ui>
+               <textEdit/>
+            </ui>
+            <value>
+               <exData contentType="text/html">
+                  <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p style="letter-spacing:0in"><span xfa:embed="#floatingField000041" xfa:embedMode="raw" xfa:embedType="uri"/><span style="xfa-spacerun:yes"> </span><span xfa:embed="#floatingField018467" xfa:embedMode="raw" xfa:embedType="uri"/></p></body>
+               </exData>
+            </value>
+            <font size="7pt" typeface="Arial"/>
+            <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0.25mm"/>
+         </draw>
+         <subform h="24.983mm" name="SF_AN_ADR" w="48.002mm" x="1.998mm" y="7.017mm">
+            <bind match="none"/>
+            <field anchorType="bottomLeft" h="3mm" name="TF_LABEL_AN" w="48.002mm" y="3mm">
+               <ui>
+                  <textEdit multiLine="1">
+                     <border presence="hidden"/>
+                  </textEdit>
+               </ui>
+               <font size="6pt" typeface="Arial"/>
+               <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0.5mm"/>
+               <caption reserve="47.6308mm">
+                  <value>
+                     <text xliff:rid="20C7D5C5-EA38-4FBC-A1A4-AB27D1A06A49">An:</text>
+                  </value>
+               </caption>
+               <value>
+                  <exData contentType="text/html"/>
+               </value>
+            </field>
+            <field anchorType="bottomLeft" h="3.5mm" name="TF_AN_LINE1" w="48mm" y="6.5mm">
+               <ui>
+                  <textEdit multiLine="1">
+                     <border presence="hidden"/>
+                  </textEdit>
+               </ui>
+               <font size="8pt" typeface="Arial"/>
+               <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0.5mm"/>
+               <caption reserve="48mm">
+                  <value>
+                     <text xliff:rid="410EF670-4509-4BF9-8BBF-B3D3C2B817F9">##WE_ADR_LINE1##</text>
+                  </value>
+               </caption>
+               <value>
+                  <exData contentType="text/html"/>
+               </value>
+            </field>
+            <field anchorType="bottomLeft" h="3.5mm" name="TF_AN_LINE1" w="48mm" y="14.5mm">
+               <ui>
+                  <textEdit multiLine="1">
+                     <border presence="hidden"/>
+                  </textEdit>
+               </ui>
+               <font size="8pt" typeface="Arial"/>
+               <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0.5mm"/>
+               <caption reserve="48mm">
+                  <value>
+                     <text xliff:rid="2D0A2C13-5DCD-4204-8590-160F2A3FB697">##WE_ADR_LINE1##</text>
+                  </value>
+               </caption>
+               <value>
+                  <exData contentType="text/html"/>
+               </value>
+            </field>
+            <field anchorType="bottomLeft" h="4.5mm" name="TF_AN_LINE1" w="48mm" x="0.002mm" y="19.483mm">
+               <ui>
+                  <textEdit multiLine="1">
+                     <border presence="hidden"/>
+                  </textEdit>
+               </ui>
+               <font typeface="Arial"/>
+               <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0.5mm"/>
+               <caption reserve="48mm">
+                  <value>
+                     <text xliff:rid="33528A4E-B04B-4DE2-B2C7-B0ED079A1CCB">##WE_ADR_LINE1##</text>
+                  </value>
+               </caption>
+               <value>
+                  <exData contentType="text/html"/>
+               </value>
+            </field>
+            <field anchorType="bottomLeft" h="4.5mm" name="TF_AN_LINE1" w="48mm" x="0.002mm" y="24.483mm">
+               <ui>
+                  <textEdit multiLine="1">
+                     <border presence="hidden"/>
+                  </textEdit>
+               </ui>
+               <font typeface="Arial"/>
+               <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0.5mm"/>
+               <caption reserve="48mm">
+                  <value>
+                     <text xliff:rid="77371B0F-7219-4222-82BF-C29B1EF01412">##WE_ADR_LINE1##</text>
+                  </value>
+               </caption>
+               <value>
+                  <exData contentType="text/html"/>
+               </value>
+            </field>
+            <border>
+               <edge presence="hidden"/>
+               <edge/>
+               <edge/>
+               <edge presence="hidden"/>
+               <corner/>
+            </border>
+            <field anchorType="bottomLeft" h="3.5mm" name="TF_AN_LINE1" w="48mm" x="0.002mm" y="10.483mm">
+               <ui>
+                  <textEdit multiLine="1">
+                     <border presence="hidden"/>
+                  </textEdit>
+               </ui>
+               <font size="8pt" typeface="Arial"/>
+               <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0.5mm"/>
+               <caption reserve="48mm">
+                  <value>
+                     <text xliff:rid="2FC92A05-E14A-4A08-A33E-4347CACAF12A">##WE_ADR_LINE1##</text>
+                  </value>
+               </caption>
+               <value>
+                  <exData contentType="text/html"/>
+               </value>
+            </field>
+            <?templateDesigner expand 0?></subform>
+         <subform h="24.983mm" name="SF_ABS_ADR" w="48.966mm" x="50mm" y="7mm">
+            <bind match="none"/>
+            <field anchorType="bottomLeft" h="3mm" name="TF_LABEL_ABS" w="48mm" y="3mm">
+               <ui>
+                  <textEdit multiLine="1">
+                     <border presence="hidden"/>
+                  </textEdit>
+               </ui>
+               <font size="6pt" typeface="Arial"/>
+               <margin bottomInset="0mm" leftInset="0.5mm" rightInset="0mm" topInset="0.5mm"/>
+               <caption reserve="47.5mm">
+                  <value>
+                     <text xliff:rid="3389EA5D-C8B8-4165-8977-CD33FF582A86">Absender:</text>
+                  </value>
+               </caption>
+               <value>
+                  <exData contentType="text/html"/>
+               </value>
+            </field>
+            <field anchorType="bottomLeft" h="3.5mm" name="TF_ABS_LINE1" w="48mm" y="6.517mm">
+               <ui>
+                  <textEdit multiLine="1">
+                     <border presence="hidden"/>
+                  </textEdit>
+               </ui>
+               <font size="8pt" typeface="Arial"/>
+               <margin bottomInset="0mm" leftInset="0.5mm" rightInset="0mm" topInset="0.5mm"/>
+               <caption reserve="47.5mm">
+                  <value>
+                     <text xliff:rid="9C055092-5D05-445F-BA64-1B8B8408D3E7">##ABS_ADR_LINE1##</text>
+                  </value>
+               </caption>
+               <value>
+                  <exData contentType="text/html"/>
+               </value>
+            </field>
+            <field anchorType="bottomLeft" h="3.5mm" name="TF_ABS_LINE1" w="48mm" y="10.517mm">
+               <ui>
+                  <textEdit multiLine="1">
+                     <border presence="hidden"/>
+                  </textEdit>
+               </ui>
+               <font size="8pt" typeface="Arial"/>
+               <margin bottomInset="0mm" leftInset="0.5mm" rightInset="0mm" topInset="0.5mm"/>
+               <caption reserve="47.5mm">
+                  <value>
+                     <text xliff:rid="A475B2EF-BD75-436D-BACB-10325A5D8CAF">##ABS_ADR_LINE1##</text>
+                  </value>
+               </caption>
+               <value>
+                  <exData contentType="text/html"/>
+               </value>
+            </field>
+            <field anchorType="bottomLeft" h="3.5mm" name="TF_ABS_LINE1" w="48mm" y="14.517mm">
+               <ui>
+                  <textEdit multiLine="1">
+                     <border presence="hidden"/>
+                  </textEdit>
+               </ui>
+               <font size="8pt" typeface="Arial"/>
+               <margin bottomInset="0mm" leftInset="0.5mm" rightInset="0mm" topInset="0.5mm"/>
+               <caption reserve="47.5mm">
+                  <value>
+                     <text xliff:rid="2CD47C73-886B-46DB-8D76-4943DB8FDB02">##ABS_ADR_LINE1##</text>
+                  </value>
+               </caption>
+               <value>
+                  <exData contentType="text/html"/>
+               </value>
+            </field>
+            <field anchorType="bottomLeft" h="4.5mm" name="TF_ABS_LINE1" w="48mm" y="19.5mm">
+               <ui>
+                  <textEdit multiLine="1">
+                     <border presence="hidden"/>
+                  </textEdit>
+               </ui>
+               <font typeface="Arial"/>
+               <margin bottomInset="0mm" leftInset="0.5mm" rightInset="0mm" topInset="0.5mm"/>
+               <caption reserve="47.5mm">
+                  <value>
+                     <text xliff:rid="4B70BB97-BA26-4C5A-B656-63CD661B3DB9">##ABS_ADR_LINE1##</text>
+                  </value>
+               </caption>
+               <value>
+                  <exData contentType="text/html"/>
+               </value>
+            </field>
+            <field anchorType="bottomLeft" h="4.5mm" name="TF_ABS_LINE1" w="48mm" y="24.5mm">
+               <ui>
+                  <textEdit multiLine="1">
+                     <border presence="hidden"/>
+                  </textEdit>
+               </ui>
+               <font typeface="Arial"/>
+               <margin bottomInset="0mm" leftInset="0.5mm" rightInset="0mm" topInset="0.5mm"/>
+               <caption reserve="47.5mm">
+                  <value>
+                     <text xliff:rid="961D7459-AA9F-4E0C-B4C4-2C0FA02BDF04">##ABS_ADR_LINE1##</text>
+                  </value>
+               </caption>
+               <value>
+                  <exData contentType="text/html"/>
+               </value>
+            </field>
+            <border>
+               <edge presence="hidden"/>
+               <edge presence="hidden"/>
+               <edge/>
+               <edge presence="hidden"/>
+               <corner/>
+               <corner/>
+               <corner/>
+               <corner presence="hidden"/>
+            </border>
+            <?templateDesigner expand 0?></subform>
+         <subform h="13.5mm" name="SF_ASN" w="67.005mm" x="10mm" y="34.034mm">
+            <bind match="none"/>
+            <field anchorType="bottomLeft" h="4mm" name="TF_LABEL_ASN" w="7mm" y="4mm">
+               <ui>
+                  <textEdit multiLine="1">
+                     <border presence="hidden"/>
+                  </textEdit>
+               </ui>
+               <font size="8pt" typeface="Arial"/>
+               <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0.5mm"/>
+               <caption reserve="7mm">
+                  <value>
+                     <text xliff:rid="637B3EE8-0ED8-493D-A788-DC0136596D88">ASN:</text>
+                  </value>
+               </caption>
+               <value>
+                  <exData contentType="text/html"/>
+               </value>
+            </field>
+            <field anchorType="bottomLeft" h="3.8mm" name="TF_ASN" w="22mm" x="8mm" y="4mm">
+               <ui>
+                  <textEdit multiLine="1">
+                     <border presence="hidden"/>
+                  </textEdit>
+               </ui>
+               <font typeface="Arial"/>
+               <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+               <caption reserve="22mm">
+                  <value>
+                     <text xliff:rid="EE798BAA-0484-4741-9DE9-7707B909CE0D">1234567890</text>
+                  </value>
+               </caption>
+               <value>
+                  <exData contentType="text/html"/>
+               </value>
+            </field>
+            <field h="10mm" hAlign="center" name="BC_ASN" w="60mm" y="3.5mm">
+               <ui>
+                  <barcode checksum="auto" dataLength="24" textLocation="none" type="code128" wideNarrowRatio="fixed"/>
+               </ui>
+               <font typeface="Courier New"/>
+               <value>
+                  <text xliff:rid="FD8C5D4A-964C-4485-887C-5C2B0309890F">1234567890</text>
+               </value>
+               <bind match="none"/>
+               <margin leftInset="8mm"/>
+            </field>
+            <?templateDesigner expand 0?></subform>
+         <subform h="13.5mm" name="SF_NVE" w="67.005mm" x="10mm" y="50.006mm">
+            <bind match="none"/>
+            <field anchorType="bottomLeft" h="4mm" name="TF_LABEL_NVE" w="16mm" y="4mm">
+               <ui>
+                  <textEdit multiLine="1">
+                     <border presence="hidden"/>
+                  </textEdit>
+               </ui>
+               <font size="8pt" typeface="Arial"/>
+               <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0.5mm"/>
+               <caption reserve="15.5907mm">
+                  <value>
+                     <text xliff:rid="63BE71D1-392D-48B1-A5B7-9A6BEBA6BB42">NVE/SSCC:</text>
+                  </value>
+               </caption>
+               <value>
+                  <exData contentType="text/html"/>
+               </value>
+            </field>
+            <field anchorType="bottomLeft" h="3.8mm" name="TF_NVE" w="44mm" x="16mm" y="4mm">
+               <ui>
+                  <textEdit multiLine="1">
+                     <border presence="hidden"/>
+                  </textEdit>
+               </ui>
+               <font typeface="Arial"/>
+               <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+               <caption reserve="44mm">
+                  <value>
+                     <text xliff:rid="26F6FFB6-24AB-41A6-AD41-1A5168933905">1234567890123456789012</text>
+                  </value>
+               </caption>
+               <value>
+                  <exData contentType="text/html"/>
+               </value>
+            </field>
+            <field h="10mm" hAlign="center" name="BC_NVE" w="60mm" y="3.5mm">
+               <ui>
+                  <barcode checksum="auto" dataLength="24" textLocation="none" type="code128" wideNarrowRatio="fixed"/>
+               </ui>
+               <font typeface="Courier New"/>
+               <value>
+                  <text xliff:rid="9D0D2DE8-7042-40BD-A3A4-3B329D61D481">1234567890123456789012</text>
+               </value>
+               <bind match="none"/>
+               <margin leftInset="8mm"/>
+            </field>
+            <?templateDesigner expand 0?></subform>
+         <field anchorType="bottomLeft" h="3mm" name="TF_PRODUCT" w="65mm" x="10mm" y="69mm">
+            <ui>
+               <textEdit multiLine="1">
+                  <border presence="hidden"/>
+               </textEdit>
+            </ui>
+            <font size="7pt" typeface="Arial"/>
+            <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+            <caption reserve="65mm">
+               <value>
+                  <text xliff:rid="B6F9FA53-3721-473E-A25F-04287A27E675">Produktgruppe: Computer / Zubehoer</text>
+               </value>
+            </caption>
+            <value>
+               <exData contentType="text/html"/>
+            </value>
+         </field>
+         <subform h="10mm" name="SF_RECEIVE" w="98mm" x="1mm" y="69.5mm">
+            <bind match="none"/>
+            <field anchorType="bottomLeft" h="9.5mm" name="TF_RECEIVE" w="94mm" y="10mm">
+               <ui>
+                  <textEdit multiLine="1">
+                     <border presence="hidden"/>
+                  </textEdit>
+               </ui>
+               <font size="22pt" typeface="Arial" weight="bold"/>
+               <margin bottomInset="0mm" leftInset="8mm" rightInset="0mm" topInset="1mm"/>
+               <caption reserve="81.6652mm">
+                  <value>
+                     <text xliff:rid="6B68CF85-193E-4AAB-9C7B-7E39C10A8AD8">LP Receive SSCC</text>
+                  </value>
+               </caption>
+               <value>
+                  <exData contentType="text/html"/>
+               </value>
+            </field>
+            <border>
+               <edge/>
+               <edge presence="hidden"/>
+               <edge presence="hidden"/>
+               <edge presence="hidden"/>
+               <corner/>
+               <corner/>
+               <corner presence="hidden"/>
+               <corner/>
+            </border>
+            <?templateDesigner expand 0?></subform>
+         <subform h="13.037mm" name="SF_CAUTION" w="19.983mm" x="9mm" y="81mm">
+            <bind match="none"/>
+            <field anchorType="bottomLeft" h="4.5mm" name="TF_CAUTION" w="20mm" x="0.017mm" y="4.5mm">
+               <ui>
+                  <textEdit multiLine="1">
+                     <border presence="hidden"/>
+                  </textEdit>
+               </ui>
+               <font size="12pt" typeface="Arial"/>
+               <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+               <caption reserve="20mm">
+                  <value>
+                     <text xliff:rid="A5112A27-740D-4205-A258-F06942EC9672">CAUTION</text>
+                  </value>
+                  <para hAlign="center"/>
+               </caption>
+               <para hAlign="center"/>
+               <value>
+                  <exData contentType="text/html"/>
+               </value>
+            </field>
+            <field anchorType="bottomLeft" h="4.5mm" name="TF_WEIGHT" w="20mm" x="0.017mm" y="8.5mm">
+               <ui>
+                  <textEdit multiLine="1">
+                     <border presence="hidden"/>
+                  </textEdit>
+               </ui>
+               <font size="12pt" typeface="Arial" weight="bold"/>
+               <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+               <caption reserve="20mm">
+                  <value>
+                     <text xliff:rid="1F59883B-7D80-4C0C-AA7D-576D9117339B">+ 15 kg</text>
+                  </value>
+                  <para hAlign="center"/>
+               </caption>
+               <para hAlign="center"/>
+               <value>
+                  <exData contentType="text/html"/>
+               </value>
+            </field>
+            <field anchorType="bottomLeft" h="4.5mm" name="TF_HEAVY" w="20mm" y="13.037mm">
+               <ui>
+                  <textEdit multiLine="1">
+                     <border presence="hidden"/>
+                  </textEdit>
+               </ui>
+               <font size="12pt" typeface="Arial" weight="bold"/>
+               <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+               <caption reserve="20mm">
+                  <value>
+                     <text xliff:rid="1CBD8198-EE66-4D1A-8CC7-06E18B0DAB12">HEAVY</text>
+                  </value>
+                  <para hAlign="center"/>
+               </caption>
+               <para hAlign="center"/>
+               <value>
+                  <exData contentType="text/html"/>
+               </value>
+            </field>
+            <?templateDesigner expand 0?></subform>
+         <subform h="8.5mm" name="SF_SINGLE_ASIN" w="20mm" x="62mm" y="82.5mm">
+            <bind match="none"/>
+            <field anchorType="bottomLeft" h="4.5mm" name="TF_SINGLE" w="20mm" y="4.5mm">
+               <ui>
+                  <textEdit multiLine="1">
+                     <border presence="hidden"/>
+                  </textEdit>
+               </ui>
+               <font size="12pt" typeface="Arial" weight="bold"/>
+               <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+               <caption reserve="20mm">
+                  <value>
+                     <text xliff:rid="D4D370F4-C002-4C3D-A0AD-0B9D6E80D9AE">SINGLE</text>
+                  </value>
+                  <para hAlign="center"/>
+               </caption>
+               <para hAlign="center"/>
+               <value>
+                  <exData contentType="text/html"/>
+               </value>
+            </field>
+            <field anchorType="bottomLeft" h="4.5mm" name="TF_ASIN" w="20mm" y="8.5mm">
+               <ui>
+                  <textEdit multiLine="1">
+                     <border presence="hidden"/>
+                  </textEdit>
+               </ui>
+               <font size="12pt" typeface="Arial" weight="bold"/>
+               <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+               <caption reserve="20mm">
+                  <value>
+                     <text xliff:rid="1019509E-0381-4B77-BF8F-310A1B29A2C3">ASIN</text>
+                  </value>
+                  <para hAlign="center"/>
+               </caption>
+               <para hAlign="center"/>
+               <value>
+                  <exData contentType="text/html"/>
+               </value>
+            </field>
+            <field anchorType="bottomLeft" h="4.5mm" name="TF_SINGLE" w="20mm" y="4.5mm">
+               <ui>
+                  <textEdit multiLine="1">
+                     <border presence="hidden"/>
+                  </textEdit>
+               </ui>
+               <font size="12pt" typeface="Arial" weight="bold"/>
+               <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+               <caption reserve="20mm">
+                  <value>
+                     <text xliff:rid="759A54E6-769B-48CA-AE3D-D4BDFDA3A130">SINGLE</text>
+                  </value>
+                  <para hAlign="center"/>
+               </caption>
+               <para hAlign="center"/>
+               <value>
+                  <exData contentType="text/html"/>
+               </value>
+            </field>
+            <?templateDesigner expand 0?></subform>
+         <subform h="12.056mm" name="SF_GTIN_EAN" w="38mm" x="28mm" y="96mm">
+            <bind match="none"/>
+            <field anchorType="bottomLeft" h="4.251mm" hAlign="center" name="TF_EAN" w="38mm" y="4.251mm">
+               <ui>
+                  <textEdit multiLine="1"/>
+               </ui>
+               <font size="12pt" typeface="Arial" weight="bold"/>
+               <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+               <caption reserve="38mm">
+                  <value>
+                     <text xliff:rid="D02F537D-0B71-430D-B971-4D29A58E9815">GTIN / EAN:</text>
+                  </value>
+                  <para hAlign="center"/>
+               </caption>
+               <para hAlign="center"/>
+            </field>
+            <field access="readOnly" minH="7.056mm" name="EANCODE_T2" w="16mm" x="21.999mm" y="5mm">
+               <ui>
+                  <textEdit>
+                     <border presence="hidden">
+                        <?templateDesigner StyleID aped0?></border>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font size="20pt" typeface="Arial" weight="bold"/>
+               <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+               <para spaceBelow="0pt" vAlign="middle"/>
+               <caption reserve="0mm">
+                  <para spaceBelow="0pt" vAlign="middle"/>
+                  <value>
+                     <text xmlns:xft-xliff="http://www.xfa.org/schema/xfa-xliff/1.0/" xft-xliff:id="N211"/>
+                  </value>
+               </caption>
+               <bind match="dataRef" ref="$.HU_HEADER.DATA[*].ZZ_VAR_03"/>
+               <assist>
+                  <speak xmlns:xft-xliff="http://www.xfa.org/schema/xfa-xliff/1.0/" priority="toolTip" xft-xliff:id="N273" xliff:rid="C1CABDB8-602B-4CD2-B772-1F0D6C80D127">Handling Unit</speak>
+                  <toolTip xmlns:xft-xliff="http://www.xfa.org/schema/xfa-xliff/1.0/" xft-xliff:id="N358" xliff:rid="2AA3A4D1-6879-4410-8C24-0FCA03076495">Ident R</toolTip>
+               </assist>
+               <?digestForSAP digest="b98665778c220187a1659bb863b31621"?>
+               <value>
+                  <text xliff:rid="09BD90AB-9EA5-4F75-A38B-43B2AFC5CE82">123456789012345678</text>
+               </value>
+            </field>
+            <field access="readOnly" minH="4.939mm" name="EANCODE_T1" w="22mm" y="6.501mm">
+               <ui>
+                  <textEdit>
+                     <border presence="hidden">
+                        <?templateDesigner StyleID aped0?></border>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font size="14pt" typeface="Arial" weight="bold"/>
+               <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+               <para spaceBelow="0pt" vAlign="middle"/>
+               <caption reserve="0mm">
+                  <para spaceBelow="0pt" vAlign="middle"/>
+                  <value>
+                     <text xmlns:xft-xliff="http://www.xfa.org/schema/xfa-xliff/1.0/" xft-xliff:id="N211"/>
+                  </value>
+               </caption>
+               <bind match="dataRef" ref="$.HU_DETAILS.DATA[*].EAN_GTIN"/>
+               <assist>
+                  <speak xmlns:xft-xliff="http://www.xfa.org/schema/xfa-xliff/1.0/" priority="toolTip" xft-xliff:id="N273" xliff:rid="D94F9DB1-9DFD-4EE9-9944-745B2ED05511">Handling Unit</speak>
+                  <toolTip xmlns:xft-xliff="http://www.xfa.org/schema/xfa-xliff/1.0/" xft-xliff:id="N358" xliff:rid="87C11E3B-23CD-4A30-BB90-E4E445AE64EA">Ident R</toolTip>
+               </assist>
+               <?digestForSAP digest="b98665778c220187a1659bb863b31621"?>
+               <value>
+                  <text xliff:rid="B3460A62-3E4E-4732-A1BB-83AA0B3D838C">123456789012345678</text>
+               </value>
+            </field>
+            <?templateDesigner expand 0?></subform>
+         <?templateDesigner expand 1?></subform>
+      <?templateDesigner expand 1?>
+      <?renderCache.subset "Arial" 0 0 ISO-8859-1 4 200 50 0003000600120013001400150016001700180019001A001B001C001D00240025002600270028002C002F003000310032003300350036003700380039003A003B003D0042004500470048004A004B004E00500051005200530055005600570058005E0060 #/0123456789:ABCDEILMNOPRSTUVWXZ_bdeghkmnoprstu{}?>
+      <?renderCache.subset "Arial" 1 0 ISO-8859-1 4 136 34 0003000E00120013001400150016001700180019001A001B001C001D002400260028002A002B002C002F003100330035003600370039003C00460048004A004C004E0059 +/0123456789:ACEGHILNPRSTVYcegikv?>
+      <?renderCache.subset "Courier New" 0 0 ISO-8859-1 4 40 10 0013001400150016001700180019001A001B001C0123456789?>
+   </subform>
+   <?templateDesigner Grid show:1, snap:1, units:17, color:ff8080, origin:(0,0), interval:(25000,25000)?>
+   <?templateDesigner DefaultLanguage FormCalc?>
+   <?templateDesigner DefaultRunAt client?>
+   <?templateDesigner DefaultPreviewType print?>
+   <?templateDesigner XDPPreviewFormat 1?>
+   <?originalXFAVersion http://www.xfa.org/schema/xfa-template/2.4/?>
+   <?templateDesigner FormTargetVersion 28?>
+   <?templateDesigner Rulers horizontal:1, vertical:1, guidelines:1, crosshairs:0?>
+   <?templateDesigner Zoom 278?></template>
+<config xmlns="http://www.xfa.org/schema/xci/2.8/">
+   <agent name="designer">
+      <!--  [0..n]  -->
+      <destination>pdf</destination>
+      <pdf>
+         <!--  [0..n]  -->
+         <fontInfo/>
+         <taggedMode>custom</taggedMode>
+      </pdf>
+      <common>
+         <template>
+            <base>https://vhaoiws1wd01.sap.also.app:44380/sap/bc/fp/form/layout/</base>
+         </template>
+      </common>
+   </agent>
+   <present>
+      <!--  [0..n]  -->
+      <pdf>
+         <!--  [0..n]  -->
+         <version>1.7</version>
+         <adobeExtensionLevel>3</adobeExtensionLevel>
+      </pdf>
+      <common>
+         <data>
+            <xsl>
+               <uri/>
+            </xsl>
+            <outputXSL>
+               <uri/>
+            </outputXSL>
+         </data>
+      </common>
+      <xdp>
+         <packets>*</packets>
+      </xdp>
+      <cache>
+         <macroCache/>
+      </cache>
+   </present>
+</config>
+<connectionSet xmlns="http://www.xfa.org/schema/xfa-connection-set/2.8/">
+   <xsdConnection dataDescription="data" name="ZHU_LABEL_AMAZON_SSCC">
+      <uri/>
+      <rootElement>data</rootElement>
+   </xsdConnection>
+   <?originalXFAVersion http://www.xfa.org/schema/xfa-connection-set/2.1/?></connectionSet>
+<xfa:datasets xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/">
+   <xfa:data xfa:dataNode="dataGroup"/>
+   <dd:dataDescription xmlns:dd="http://ns.adobe.com/data-description/" dd:name="data">
+      <data>
+         <PRINT_PARAM>
+            <REPEAT_PRT/>
+         </PRINT_PARAM>
+         <MATERIAL_ITEMS dd:minOccur="0">
+            <DATA dd:maxOccur="-1">
+               <MATNR/>
+               <CHARG/>
+               <ENTITLED/>
+               <QUAN/>
+               <MAKTX/>
+            </DATA>
+         </MATERIAL_ITEMS>
+         <HU_DETAILS dd:minOccur="0">
+            <DATA dd:maxOccur="-1">
+               <EAN_GTIN/>
+            </DATA>
+         </HU_DETAILS>
+         <HU_HEADER dd:minOccur="0">
+            <DATA dd:maxOccur="-1">
+               <MANDT/>
+               <GUID_HU/>
+               <HUIDENT/>
+               <PMAT_GUID/>
+               <CREATED_BY/>
+               <CREATED_AT/>
+               <ORIG_SYSTEM/>
+               <CHANGED_BY/>
+               <CHANGED_AT/>
+               <G_WEIGHT/>
+               <N_WEIGHT/>
+               <UNIT_GW/>
+               <T_WEIGHT/>
+               <UNIT_TW/>
+               <G_VOLUME/>
+               <N_VOLUME/>
+               <UNIT_GV/>
+               <T_VOLUME/>
+               <UNIT_TV/>
+               <G_CAPA/>
+               <N_CAPA/>
+               <T_CAPA/>
+               <LENGTH/>
+               <WIDTH/>
+               <HEIGHT/>
+               <UNIT_LWH/>
+               <MAX_WEIGHT/>
+               <TOLW/>
+               <TARE_VAR/>
+               <MAX_VOLUME/>
+               <TOLV/>
+               <CLOSED_PACKAGE/>
+               <MAX_CAPA/>
+               <TOLC/>
+               <MAX_LENGTH/>
+               <MAX_WIDTH/>
+               <MAX_HEIGHT/>
+               <UNIT_MAX_LWH/>
+               <LGNUM/>
+               <VHI/>
+               <LETYP/>
+               <FLGAVQ/>
+               <FLGMOVE/>
+               <PROCS/>
+               <COPST/>
+               <PRCES/>
+               <DSTGRP/>
+               <WKLID/>
+               <ENTITLED/>
+               <WSTYP/>
+               <WSSEC/>
+               <WSBIN/>
+               <WCR/>
+               <IPICK/>
+               <MFSERROR/>
+               <WTCONF/>
+               <UKCON/>
+               <TRANSIT/>
+               <MFS_STOCKTRANS_CNT/>
+               <FLGTWEXT/>
+               <PMTYP/>
+               <PACKGR/>
+               <SAPRL/>
+               <PHYSTAT/>
+               <TOP/>
+               <BOTTOM/>
+               <STSMA/>
+               <PB_ENGINE/>
+               <PS_GUID/>
+               <PS_LEVEL_SEQ/>
+               <PI_GUID/>
+               <OBJREF/>
+               <HZMT/>
+               <LOGPOS/>
+               <HU_GUID_EXT/>
+               <LOGPOS_EXT/>
+               <AUTO_CREA_PICK/>
+               <HUHDR_DUMMY/>
+               <ZZ_IDENT_I/>
+               <ZZ_IDENT_R/>
+               <ZZ_TERMINAL/>
+               <ZZ_DATE/>
+               <ZZ_TIME/>
+               <ZZ_MPART_NO/>
+               <ZZ_VAR_01/>
+               <ZZ_VAR_02/>
+               <ZZ_VAR_03/>
+               <ZZ_VAR_04/>
+               <ZZ_VAR_05/>
+               <UPDKZ/>
+               <PMAT/>
+               <PMTEXT/>
+               <DB_LOCK/>
+               <HIGHER_GUID/>
+               <PMCAT/>
+               <VOLUM_FIX/>
+               <CAPA_FIX/>
+               <GUID_LOC/>
+               <LOC_IDX/>
+               <LOC_TYPE/>
+               <LGTYP/>
+               <LGPLA/>
+               <LGBER/>
+               <RSRC/>
+               <TU_NUM/>
+               <LGNUM_VIEW/>
+               <FREE>
+                  <WEIGHT/>
+                  <UNIT_W/>
+                  <VOLUM/>
+                  <UNIT_V/>
+                  <CAPA/>
+               </FREE>
+               <FREE_TOL>
+                  <WEIGHT/>
+                  <UNIT_W/>
+                  <VOLUM/>
+                  <UNIT_V/>
+                  <CAPA/>
+               </FREE_TOL>
+               <NO_QUAN_CHANGES/>
+               <NO_ATTR_CHANGES/>
+               <NO_MOVE/>
+               <SEL_ALL/>
+               <LVL/>
+               <TO_READ/>
+               <HUDEL/>
+               <EMPTY/>
+               <CHECK_DEL/>
+               <SYSTEM_STATUS/>
+               <USER_STATUS/>
+               <ICON_STATUS/>
+               <PROCTY/>
+               <RES>
+                  <WEIGHT/>
+                  <UNIT_W/>
+                  <VOLUM/>
+                  <UNIT_V/>
+                  <CAPA/>
+               </RES>
+               <LB_MOVE/>
+               <LB_READ/>
+               <HDR_EPC/>
+               <SGTIN/>
+               <HUTYPGRP/>
+               <CONS/>
+               <CREA_STEP/>
+               <LP_ORIENTATION/>
+               <LP_ROW_OFFSET/>
+               <LP_STACK_OFFSET/>
+               <LP_LEVEL_OFFSET/>
+               <LP_ROW_NUM/>
+               <LP_STACK_NUM/>
+               <LP_LEVEL_NUM/>
+               <LP_SPLIT_DECK_LVL/>
+               <LP_LOAD_SEQ/>
+               <ORIGINAL_DOCCAT/>
+               <ORIGINAL_DOCID/>
+               <ORIGINAL_ITMID/>
+               <TWHUTYPE/>
+               <REF_DOCCAT/>
+               <REF_DOCID/>
+               <REF_ITMID/>
+               <TU_NUM_TW/>
+               <TU_SR_ACT_NUM_TW/>
+               <FRD_NUM/>
+               <FRD_ITEM/>
+               <FRD_ITEM_CAT/>
+               <STOP_ID_FO/>
+               <TRANSPL_LOGSYS/>
+               <MTR/>
+               <TOP_HU_PHYS/>
+               <NO_UNPACK/>
+               <AIR_CARGO_SECURITY_STATUS_CODE/>
+               <DAMAGED/>
+               <VEH_NUM_TW/>
+               <VEH_SR_ACT_NUM_TW/>
+               <ACS_TARGET/>
+               <CSS_CURRENT/>
+               <CSS_SET_BY/>
+               <CSS_SET_AT/>
+               <DEP_COUNTRY/>
+               <EXEMPTION1/>
+               <EXEMPTION2/>
+            </DATA>
+         </HU_HEADER>
+      </data>
+   </dd:dataDescription>
+</xfa:datasets>
+<localeSet xmlns="http://www.xfa.org/schema/xfa-locale-set/2.7/">
+   <locale desc="English (United States)" name="en_US">
+      <calendarSymbols name="gregorian">
+         <monthNames>
+            <month>January</month>
+            <month>February</month>
+            <month>March</month>
+            <month>April</month>
+            <month>May</month>
+            <month>June</month>
+            <month>July</month>
+            <month>August</month>
+            <month>September</month>
+            <month>October</month>
+            <month>November</month>
+            <month>December</month>
+         </monthNames>
+         <monthNames abbr="1">
+            <month>Jan</month>
+            <month>Feb</month>
+            <month>Mar</month>
+            <month>Apr</month>
+            <month>May</month>
+            <month>Jun</month>
+            <month>Jul</month>
+            <month>Aug</month>
+            <month>Sep</month>
+            <month>Oct</month>
+            <month>Nov</month>
+            <month>Dec</month>
+         </monthNames>
+         <dayNames>
+            <day>Sunday</day>
+            <day>Monday</day>
+            <day>Tuesday</day>
+            <day>Wednesday</day>
+            <day>Thursday</day>
+            <day>Friday</day>
+            <day>Saturday</day>
+         </dayNames>
+         <dayNames abbr="1">
+            <day>Sun</day>
+            <day>Mon</day>
+            <day>Tue</day>
+            <day>Wed</day>
+            <day>Thu</day>
+            <day>Fri</day>
+            <day>Sat</day>
+         </dayNames>
+         <meridiemNames>
+            <meridiem>AM</meridiem>
+            <meridiem>PM</meridiem>
+         </meridiemNames>
+         <eraNames>
+            <era>BC</era>
+            <era>AD</era>
+         </eraNames>
+      </calendarSymbols>
+      <datePatterns>
+         <datePattern name="full">EEEE, MMMM D, YYYY</datePattern>
+         <datePattern name="long">MMMM D, YYYY</datePattern>
+         <datePattern name="med">MMM D, YYYY</datePattern>
+         <datePattern name="short">M/D/YY</datePattern>
+      </datePatterns>
+      <timePatterns>
+         <timePattern name="full">h:MM:SS A Z</timePattern>
+         <timePattern name="long">h:MM:SS A Z</timePattern>
+         <timePattern name="med">h:MM:SS A</timePattern>
+         <timePattern name="short">h:MM A</timePattern>
+      </timePatterns>
+      <dateTimeSymbols>GyMdkHmsSEDFwWahKzZ</dateTimeSymbols>
+      <numberPatterns>
+         <numberPattern name="numeric">z,zz9.zzz</numberPattern>
+         <numberPattern name="currency">$z,zz9.99|($z,zz9.99)</numberPattern>
+         <numberPattern name="percent">z,zz9%</numberPattern>
+      </numberPatterns>
+      <numberSymbols>
+         <numberSymbol name="decimal">.</numberSymbol>
+         <numberSymbol name="grouping">,</numberSymbol>
+         <numberSymbol name="percent">%</numberSymbol>
+         <numberSymbol name="minus">-</numberSymbol>
+         <numberSymbol name="zero">0</numberSymbol>
+      </numberSymbols>
+      <currencySymbols>
+         <currencySymbol name="symbol">$</currencySymbol>
+         <currencySymbol name="isoname">USD</currencySymbol>
+         <currencySymbol name="decimal">.</currencySymbol>
+      </currencySymbols>
+   </locale>
+   <?originalXFAVersion http://www.xfa.org/schema/xfa-locale-set/2.1/?></localeSet>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 4.2.1-c041 52.337767, 2008/04/13-15:41:00        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description xmlns:xmp="http://ns.adobe.com/xap/1.0/" xmlns:pdf="http://ns.adobe.com/pdf/1.3/" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/" rdf:about="">
+         <xmp:MetadataDate>2024-02-07T13:21:04Z</xmp:MetadataDate>
+         <xmp:CreatorTool>Adobe LiveCycle Designer 11.0</xmp:CreatorTool>
+         <pdf:Producer>Adobe LiveCycle Designer 11.0</pdf:Producer>
+         <xmpMM:DocumentID>uuid:93af0fa0-ba10-40a5-8aae-96f45e41847a</xmpMM:DocumentID>
+      </rdf:Description>
+   </rdf:RDF>
+</x:xmpmeta></xdp:xdp>

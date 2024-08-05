@@ -1,0 +1,476 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>Adobe Forms</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>SAPLZAF1</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZAF_CREATE_VIND_DATA</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>Get Vind data from Notes</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IS_DATA</PARAMETER>
+       <DBFIELD>ZAF_RFC_VIND</DBFIELD>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>RV_RETURN</PARAMETER>
+       <TYP>SY-SUBRC</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IS_DATA</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>VIND data from NOTES</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>RV_RETURN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>ABAP System Field: Return Code of ABAP Statements</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>ZAF_SET_ARCHIVE_ERR</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>Adobe Forms Translations</SHORT_TEXT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>EV_RETURN</PARAMETER>
+       <TYP>SYSUBRC</TYP>
+      </RSEXP>
+     </EXPORT>
+     <TABLES>
+      <RSTBL>
+       <PARAMETER>IT_DATA</PARAMETER>
+       <DBSTRUCT>ZGS_AF_ARCHIVE_ERR</DBSTRUCT>
+      </RSTBL>
+     </TABLES>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>EV_RETURN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Return Code</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IT_DATA</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Adobe Forms / Archive - Documents with Error</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>ZAF_SET_ARCHIVE_IDS</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>Adobe Forms Translations</SHORT_TEXT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>EV_RETURN</PARAMETER>
+       <TYP>SYSUBRC</TYP>
+      </RSEXP>
+     </EXPORT>
+     <TABLES>
+      <RSTBL>
+       <PARAMETER>IT_DATA</PARAMETER>
+       <DBSTRUCT>ZARCHIVE_IDS</DBSTRUCT>
+      </RSTBL>
+     </TABLES>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>EV_RETURN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Return Code</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IT_DATA</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Archive IDs and business abbreviations per company code</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>ZAF_SET_ARCHIVE_OBJECT</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>Adobe Forms Translations</SHORT_TEXT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>EV_RETURN</PARAMETER>
+       <TYP>SYSUBRC</TYP>
+      </RSEXP>
+     </EXPORT>
+     <TABLES>
+      <RSTBL>
+       <PARAMETER>IT_DATA</PARAMETER>
+       <DBSTRUCT>ZARCHIVE_OBJECT</DBSTRUCT>
+      </RSTBL>
+     </TABLES>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>EV_RETURN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Return Code</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IT_DATA</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>ZAF_SET_DOCUMENT_ID</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>Adobe Forms Translations</SHORT_TEXT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>EV_RETURN</PARAMETER>
+       <TYP>SYSUBRC</TYP>
+      </RSEXP>
+     </EXPORT>
+     <TABLES>
+      <RSTBL>
+       <PARAMETER>IT_DATA</PARAMETER>
+       <DBSTRUCT>ZAF_DOCUMENT_ID</DBSTRUCT>
+      </RSTBL>
+     </TABLES>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>EV_RETURN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Return Code</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IT_DATA</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Adobe Forms / Archive - Documents with Error</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>ZAF_SET_EMAIL_SENDER</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>Adobe Forms Translations</SHORT_TEXT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>EV_RETURN</PARAMETER>
+       <TYP>SYSUBRC</TYP>
+      </RSEXP>
+     </EXPORT>
+     <TABLES>
+      <RSTBL>
+       <PARAMETER>IT_DATA</PARAMETER>
+       <DBSTRUCT>ZAF_EMAIL_SENDER</DBSTRUCT>
+      </RSTBL>
+     </TABLES>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>EV_RETURN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Return Code</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IT_DATA</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Adobe Forms / Archive - Documents with Error</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>ZAF_SET_LABELNAMES</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>Adobe Forms Translations</SHORT_TEXT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>EV_RETURN</PARAMETER>
+       <TYP>SYSUBRC</TYP>
+      </RSEXP>
+     </EXPORT>
+     <TABLES>
+      <RSTBL>
+       <PARAMETER>IT_DATA</PARAMETER>
+       <DBSTRUCT>ZAF_LABELNAMES</DBSTRUCT>
+      </RSTBL>
+     </TABLES>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>EV_RETURN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Return Code</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IT_DATA</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Adobe Forms / Archive - Documents with Error</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>ZAF_SET_LABELNAMES_T</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>Adobe Forms Translations</SHORT_TEXT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>EV_RETURN</PARAMETER>
+       <TYP>SYSUBRC</TYP>
+      </RSEXP>
+     </EXPORT>
+     <TABLES>
+      <RSTBL>
+       <PARAMETER>IT_DATA</PARAMETER>
+       <DBSTRUCT>ZAF_LABELNAMES_T</DBSTRUCT>
+      </RSTBL>
+     </TABLES>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>EV_RETURN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Return Code</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IT_DATA</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Adobe Forms / Archive - Documents with Error</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>ZAF_SET_LOGGING</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>Adobe Forms Translations</SHORT_TEXT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>EV_RETURN</PARAMETER>
+       <TYP>SYSUBRC</TYP>
+      </RSEXP>
+     </EXPORT>
+     <TABLES>
+      <RSTBL>
+       <PARAMETER>IT_DATA</PARAMETER>
+       <DBSTRUCT>ZAF_LOGGING</DBSTRUCT>
+      </RSTBL>
+     </TABLES>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>EV_RETURN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Return Code</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IT_DATA</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Adobe Forms / Archive - Documents with Error</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>ZAF_SET_ORG_DATA</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>Adobe Forms Translations</SHORT_TEXT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>EV_RETURN</PARAMETER>
+       <TYP>SYSUBRC</TYP>
+      </RSEXP>
+     </EXPORT>
+     <TABLES>
+      <RSTBL>
+       <PARAMETER>IT_DATA</PARAMETER>
+       <DBSTRUCT>ZAF_ORG_DATA</DBSTRUCT>
+      </RSTBL>
+     </TABLES>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>EV_RETURN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Return Code</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IT_DATA</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Adobe Forms / Archive - Documents with Error</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>ZAF_SET_ORG_DAT_K01</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>Adobe Forms Translations</SHORT_TEXT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>EV_RETURN</PARAMETER>
+       <TYP>SYSUBRC</TYP>
+      </RSEXP>
+     </EXPORT>
+     <TABLES>
+      <RSTBL>
+       <PARAMETER>IT_DATA</PARAMETER>
+       <DBSTRUCT>ZAF_ORG_DATA_K01</DBSTRUCT>
+      </RSTBL>
+     </TABLES>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>EV_RETURN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Return Code</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IT_DATA</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Adobe Forms / Archive - Documents with Error</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>ZAF_SET_OUTPUT_CTRL</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>Adobe Forms Translations</SHORT_TEXT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>EV_RETURN</PARAMETER>
+       <TYP>SYSUBRC</TYP>
+      </RSEXP>
+     </EXPORT>
+     <TABLES>
+      <RSTBL>
+       <PARAMETER>IT_DATA</PARAMETER>
+       <DBSTRUCT>ZAF_OUTPUT_CTRL</DBSTRUCT>
+      </RSTBL>
+     </TABLES>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>EV_RETURN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Return Code</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IT_DATA</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>OUTPUT_CTRL</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>ZAF_SET_OUTPUT_LANGU</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>Adobe Forms Translations</SHORT_TEXT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>EV_RETURN</PARAMETER>
+       <TYP>SYSUBRC</TYP>
+      </RSEXP>
+     </EXPORT>
+     <TABLES>
+      <RSTBL>
+       <PARAMETER>IT_DATA</PARAMETER>
+       <DBSTRUCT>ZAF_OUTPUT_LANGU</DBSTRUCT>
+      </RSTBL>
+     </TABLES>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>EV_RETURN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Return Code</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IT_DATA</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Adobe Forms / Archive - Documents with Error</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>ZAF_SET_OUT_CHANNEL</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>Adobe Forms Translations</SHORT_TEXT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>EV_RETURN</PARAMETER>
+       <TYP>SYSUBRC</TYP>
+      </RSEXP>
+     </EXPORT>
+     <TABLES>
+      <RSTBL>
+       <PARAMETER>IT_DATA</PARAMETER>
+       <DBSTRUCT>ZAF_OUT_CHANNEL</DBSTRUCT>
+      </RSTBL>
+     </TABLES>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>EV_RETURN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Return Code</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IT_DATA</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Adobe Forms / Archive - Documents with Error</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>ZAF_SET_OUT_INFO</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>Adobe Forms Translations</SHORT_TEXT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>EV_RETURN</PARAMETER>
+       <TYP>SYSUBRC</TYP>
+      </RSEXP>
+     </EXPORT>
+     <TABLES>
+      <RSTBL>
+       <PARAMETER>IT_DATA</PARAMETER>
+       <DBSTRUCT>ZAF_OUT_INFO</DBSTRUCT>
+      </RSTBL>
+     </TABLES>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>EV_RETURN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Return Code</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IT_DATA</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Adobe Forms / Archive - Documents with Error</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>ZAF_SET_TRANSLATIONS</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>Adobe Forms Translations</SHORT_TEXT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>EV_RETURN</PARAMETER>
+       <TYP>SYSUBRC</TYP>
+      </RSEXP>
+     </EXPORT>
+     <TABLES>
+      <RSTBL>
+       <PARAMETER>IT_DATA</PARAMETER>
+       <DBSTRUCT>ZAF_GS_TRANSLATIONS</DBSTRUCT>
+      </RSTBL>
+     </TABLES>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>EV_RETURN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Return Code</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IT_DATA</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Adobe Forms Translations</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

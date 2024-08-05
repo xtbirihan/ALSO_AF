@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZCL_AF_CORE_TRANSLATOR</CLSNAME>
+    <LANGU>D</LANGU>
+    <DESCRIPT>Adobe Forms - Übersetzung</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>CONSTRUCTOR</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>CREATE_IT_LABELNAMES</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Transfer DDIC structure to label tab / components</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>CREATE_IT_LABELNAMES_2</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Transfer DDIC structure to label tab / field value</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>FILL_TRANSLATIONS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Fill translation / components</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>FILL_TRANSLATIONS_2</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Fill translation / field value</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>FIND_TRANSLATION</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Find translation</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_SINGLE_TRANSLATION</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Get single translation</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GS_TRANSL_KEYS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Adobe Forms - Übersetzungschlüssel</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GT_LABELNAMES</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>TabTyp: Labels</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GT_TRANSLATIONS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>TabType: Übersetzungstabelle</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GV_LOG_OBJECT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Anwendungs-Log: Objektname (Applikationskürzel)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>SELECT_TRANSLATIONS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Select translations</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+   <DESCRIPTIONS_SUB>
+    <SEOSUBCOTX>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <SCONAME>IS_TRANSL_KEYS</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Adobe Forms - Übersetzungschlüssel</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <SCONAME>IV_LOG_OBJECT</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Anwendungs-Log: Objektname (Applikationskürzel)</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>FILL_TRANSLATIONS</CMPNAME>
+     <SCONAME>CS_TRANSL</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Übersetzungsstruktur</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>FILL_TRANSLATIONS_2</CMPNAME>
+     <SCONAME>CS_TRANSL</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Übersetzungsstruktur</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>FIND_TRANSLATION</CMPNAME>
+     <SCONAME>CS_LABEL</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Text des Textfeldes für ein Dynproelement</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_SINGLE_TRANSLATION</CMPNAME>
+     <SCONAME>IV_FORM_NAME</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Formname</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_SINGLE_TRANSLATION</CMPNAME>
+     <SCONAME>IV_LABELNAME</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Adobe Forms - Wert eines Labels (Bezeichnung)</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_SINGLE_TRANSLATION</CMPNAME>
+     <SCONAME>IV_LANGU</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Sprachenschlüssel</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_SINGLE_TRANSLATION</CMPNAME>
+     <SCONAME>IV_VKORG</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Verkaufsorganisation</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_SINGLE_TRANSLATION</CMPNAME>
+     <SCONAME>RV_TRANSLATION</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Adobe Forms - Wert einer Übersetzung des Labels</DESCRIPT>
+    </SEOSUBCOTX>
+   </DESCRIPTIONS_SUB>
+  </asx:values>
+ </asx:abap>
+</abapGit>

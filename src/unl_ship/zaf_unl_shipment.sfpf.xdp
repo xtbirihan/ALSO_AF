@@ -1,0 +1,682 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xfa generator="AdobeLiveCycleDesigner_V11.0.1.20160812.1.925753_SAP" APIVersion="3.6.16186.0"?><xdp:xdp xmlns:xdp="http://ns.adobe.com/xdp/" timeStamp="2023-02-21T10:27:54Z" uuid="6d926f43-7183-4e38-a16a-50d258cf3aac">
+<template xmlns:xliff="urn:oasis:names:tc:xliff:document:1.1" xmlns="http://www.xfa.org/schema/xfa-template/3.3/">
+   <?formServer defaultPDFRenderFormat acrobat10.0dynamic?>
+   <subform layout="tb" locale="de_DE" name="data" restoreState="auto">
+      <pageSet name="PAGE">
+         <pageArea id="Page1" name="PAGE1">
+            <contentArea h="266.7mm" name="MAIN" w="203.2mm" x="6.35mm" y="6.35mm"/>
+            <medium long="11in" short="8.5in" stock="letter"/>
+            <?templateDesigner expand 1?></pageArea>
+         <?templateDesigner expand 1?></pageSet>
+      <subform h="10.5in" name="BODY" w="8in">
+         <field access="readOnly" h="6.88mm" id="ISR_TextNoLabel_for_Native_copy3" name="REFERENCE" w="47.625mm" y="15.875mm">
+            <?templateDesigner ScriptInitializers initialize:runAt=server;?>
+            <?digestForSAP digest="f47c01ae4922efd615ad1b6385f39de0"?>
+            <ui>
+               <textEdit>
+                  <border>
+                     <edge presence="hidden"/>
+                  </border>
+                  <margin/>
+               </textEdit>
+            </ui>
+            <font typeface="Arial"/>
+            <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+            <para marginLeft="3.997pt" marginRight="3.997pt" vAlign="middle"/>
+            <caption reserve="0in">
+               <para vAlign="middle"/>
+            </caption>
+            <value>
+               <text maxChars="40" xliff:rid="B98F5CF6-49B4-4721-8D15-D80F8A4BF39D">REFRENCE</text>
+            </value>
+            <assist>
+               <speak xliff:rid="017C9B08-E6A8-43EF-A8E5-6B10E4AFF1CE">Label</speak>
+            </assist>
+            <bind match="dataRef" ref="$record.WA_LABEL_DATA.DATA[*].REF"/>
+         </field>
+         <field access="readOnly" h="6.88mm" minW="28.038mm" name="DATE" y="25.4mm">
+            <?templateDesigner ScriptInitializers initialize:runAt=server;?>
+            <?digestForSAP digest="f47c01ae4922efd615ad1b6385f39de0"?>
+            <ui>
+               <textEdit>
+                  <border>
+                     <edge presence="hidden"/>
+                  </border>
+                  <margin/>
+               </textEdit>
+            </ui>
+            <font typeface="Arial"/>
+            <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+            <para marginLeft="3.997pt" marginRight="3.997pt" vAlign="middle"/>
+            <caption reserve="0in">
+               <para vAlign="middle"/>
+            </caption>
+            <value>
+               <text maxChars="10" xliff:rid="84201EF8-D09A-4ED5-B6E8-4B3E87D86D4A">DATE</text>
+            </value>
+            <assist>
+               <speak xliff:rid="EC1B90BD-02C9-45CC-B9FC-7E5A67FC9743">Label</speak>
+            </assist>
+            <bind match="dataRef" ref="$record.WA_LABEL_DATA.DATA[*].DATE"/>
+         </field>
+         <field access="readOnly" h="6.88mm" minW="47.088mm" name="USER" y="34.925mm">
+            <?templateDesigner ScriptInitializers initialize:runAt=server;?>
+            <?digestForSAP digest="f47c01ae4922efd615ad1b6385f39de0"?>
+            <ui>
+               <textEdit>
+                  <border>
+                     <edge presence="hidden"/>
+                  </border>
+                  <margin/>
+               </textEdit>
+            </ui>
+            <font typeface="Arial"/>
+            <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+            <para marginLeft="3.997pt" marginRight="3.997pt" vAlign="middle"/>
+            <caption reserve="0in">
+               <para vAlign="middle"/>
+            </caption>
+            <value>
+               <text maxChars="40" xliff:rid="EF0D69F7-AAD4-4478-9816-CB64036FD733">USER</text>
+            </value>
+            <assist>
+               <speak xliff:rid="B256306E-6DFE-4BE5-97C2-CB77D8283979">Label</speak>
+            </assist>
+            <bind match="dataRef" ref="$record.WA_LABEL_DATA.DATA[*].USER"/>
+         </field>
+         <field access="readOnly" h="6.88mm" minW="47.625mm" name="LANE" y="44.45mm">
+            <?templateDesigner ScriptInitializers initialize:runAt=server;?>
+            <?digestForSAP digest="f47c01ae4922efd615ad1b6385f39de0"?>
+            <ui>
+               <textEdit>
+                  <border>
+                     <edge presence="hidden"/>
+                  </border>
+                  <margin/>
+               </textEdit>
+            </ui>
+            <font typeface="Arial"/>
+            <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+            <para marginLeft="3.997pt" marginRight="3.997pt" vAlign="middle"/>
+            <caption reserve="0in">
+               <para vAlign="middle"/>
+            </caption>
+            <value>
+               <text maxChars="40" xliff:rid="3C603D17-0D0D-4A5C-8CAC-7E2CE06C0805">LANE</text>
+            </value>
+            <assist>
+               <speak xliff:rid="3CF68A22-6AAF-493C-8E61-1F8FDEDC8166">Label</speak>
+            </assist>
+            <bind match="dataRef" ref="$record.WA_LABEL_DATA.DATA[*].LANE"/>
+         </field>
+         <field h="13.594mm" name="IS_BARCODE" w="47.625mm" y="53.975mm">
+            <ui>
+               <barcode dataLength="10" type="code2Of5Interleaved" wideNarrowRatio="3.0"/>
+            </ui>
+            <font typeface="Courier New"/>
+            <value>
+               <text xliff:rid="719F8DC9-6AD9-42B1-9FEC-83D1EB5F0B55">1234567890</text>
+            </value>
+            <bind match="dataRef" ref="$record.WA_LABEL_DATA.DATA[*].IS"/>
+         </field>
+         <subform h="15.875mm" w="120.65mm">
+            <bind match="dataRef" ref="$record.WA_LABEL_DATA.DATA[*]"/>
+            <field h="13.594mm" name="HU_BARCODE" w="47.625mm">
+               <ui>
+                  <barcode dataLength="10" type="code2Of5Interleaved" wideNarrowRatio="3.0"/>
+               </ui>
+               <font typeface="Courier New"/>
+               <value>
+                  <text xliff:rid="1E393926-A06C-4E03-9653-1D9AB1EE8726">1234567890</text>
+               </value>
+               <bind match="dataRef" ref="$record.IS_TRANSLATE.HANDLING_UNIT"/>
+            </field>
+            <field access="readOnly" h="6.88mm" minW="47.088mm" name="INFO">
+               <?templateDesigner ScriptInitializers initialize:runAt=server;?>
+               <?digestForSAP digest="f47c01ae4922efd615ad1b6385f39de0"?>
+               <ui>
+                  <textEdit>
+                     <border>
+                        <edge presence="hidden"/>
+                     </border>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font typeface="Arial"/>
+               <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+               <para marginLeft="3.997pt" marginRight="3.997pt" vAlign="middle"/>
+               <caption reserve="0in">
+                  <para vAlign="middle"/>
+               </caption>
+               <value>
+                  <text maxChars="40" xliff:rid="35FF0EB6-E8E8-44C4-A4BC-2159F10B0A00">INFO</text>
+               </value>
+               <assist>
+                  <speak xliff:rid="B273A201-8855-4054-943F-C96AF90FC776">Label</speak>
+               </assist>
+               <bind match="dataRef" ref="$.INFO"/>
+            </field>
+            <?templateDesigner expand 1?></subform>
+         <?templateDesigner expand 1?></subform>
+      <proto/>
+      <desc>
+         <text name="version">11.0.1.20160812.1.925753.903801</text>
+      </desc>
+      <?templateDesigner expand 1?>
+      <?renderCache.subset "Arial" 0 0 ISO-8859-1 4 52 13 00240026002700280029002C002F003100320035003600370038ACDEFILNORSTU?>
+      <?renderCache.subset "Courier New" 0 0 ISO-8859-1 4 40 10 0013001400150016001700180019001A001B001C0123456789?></subform>
+   <?templateDesigner DefaultPreviewDynamic 1?>
+   <?templateDesigner DefaultRunAt client?>
+   <?templateDesigner Grid show:1, snap:1, units:0, color:ff8080, origin:(0,0), interval:(125000,125000)?>
+   <?templateDesigner WidowOrphanControl 0?>
+   <?templateDesigner DefaultCaptionFontSettings face:Arial;size:10;weight:normal;style:normal?>
+   <?templateDesigner DefaultValueFontSettings face:Arial;size:10;weight:normal;style:normal?>
+   <?templateDesigner DefaultLanguage FormCalc?>
+   <?acrobat JavaScript strictScoping?>
+   <?templateDesigner FormTargetVersion 33?>
+   <?templateDesigner Zoom 132?>
+   <?templateDesigner Rulers horizontal:1, vertical:1, guidelines:1, crosshairs:0?></template>
+<config xmlns="http://www.xfa.org/schema/xci/3.0/">
+   <agent name="designer">
+      <!--  [0..n]  -->
+      <destination>pdf</destination>
+      <pdf>
+         <!--  [0..n]  -->
+         <fontInfo/>
+      </pdf>
+      <common>
+         <template>
+            <base>https://vhaoiws1wd01.sap.also.app:44380/sap/bc/fp/form/layout/</base>
+         </template>
+      </common>
+   </agent>
+   <present>
+      <!--  [0..n]  -->
+      <pdf>
+         <!--  [0..n]  -->
+         <version>1.7</version>
+         <adobeExtensionLevel>8</adobeExtensionLevel>
+      </pdf>
+      <common>
+         <data>
+            <xsl>
+               <uri/>
+            </xsl>
+            <outputXSL>
+               <uri/>
+            </outputXSL>
+         </data>
+      </common>
+      <xdp>
+         <packets>*</packets>
+      </xdp>
+   </present>
+</config>
+<connectionSet xmlns="http://www.xfa.org/schema/xfa-connection-set/2.8/">
+   <xsdConnection dataDescription="data" name="ZAF_UNL_SHIPMENT">
+      <uri/>
+      <rootElement>data</rootElement>
+   </xsdConnection>
+</connectionSet>
+<xfa:datasets xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/">
+   <xfa:data xfa:dataNode="dataGroup"/>
+   <dd:dataDescription xmlns:dd="http://ns.adobe.com/data-description/" dd:name="data">
+      <data>
+         <IS_TRANSLATE>
+            <HANDLING_UNIT/>
+            <REFERENCE/>
+            <DATE/>
+            <TIME/>
+            <USER/>
+            <LANE/>
+            <TRACKING_NO/>
+            <IS_DATA_CORE>
+               <WA_CORE_PARAMS>
+                  <VKORG/>
+                  <FORM_NAME/>
+                  <OUTPUT_DATE/>
+                  <OUTPUT_SYSID/>
+                  <OUTPUT_TCODE/>
+                  <OUTPUT_UNAME/>
+                  <LANGU/>
+                  <WA_OUTPUTPARAMS>
+                     <DEVICE/>
+                     <NODIALOG/>
+                     <PREVIEW/>
+                     <GETPDF/>
+                     <GETPDL/>
+                     <GETXML/>
+                     <CONNECTION/>
+                     <ADSTRLEVEL/>
+                     <JOB_PROFILE/>
+                     <BUMODE/>
+                     <ASSEMBLE/>
+                     <PARALLEL/>
+                     <PDFVERSION/>
+                     <PDFTAGGED/>
+                     <PDFCHANGESRESTRICTED/>
+                     <PDFNORM/>
+                     <DEST/>
+                     <REQNEW/>
+                     <REQIMM/>
+                     <REQDEL/>
+                     <REQFINAL/>
+                     <SPOOLID/>
+                     <SENDDATE/>
+                     <SENDTIME/>
+                     <SCHEDULE/>
+                     <COPIES/>
+                     <DATASET/>
+                     <SUFFIX1/>
+                     <SUFFIX2/>
+                     <COVTITLE/>
+                     <COVER/>
+                     <RECEIVER/>
+                     <DIVISION/>
+                     <LIFETIME/>
+                     <AUTHORITY/>
+                     <RQPOSNAME/>
+                     <PDLTYPE/>
+                     <XDCNAME/>
+                     <XDCOWNER/>
+                     <NOPDF/>
+                     <SPONUMIV/>
+                     <PRINTTICKET/>
+                     <ARCMODE/>
+                     <NOARMCH/>
+                     <TITLE/>
+                     <NOPREVIEW/>
+                     <NOPRINT/>
+                     <NOARCHIVE/>
+                     <IMMEXIT/>
+                     <NOPRIBUTT/>
+                     <XFP/>
+                     <XFPTYPE/>
+                     <XFPOUTDEV/>
+                  </WA_OUTPUTPARAMS>
+                  <WA_DOCPARAMS>
+                     <LANGU/>
+                     <COUNTRY/>
+                     <FILLABLE/>
+                     <UPDATE_INTERACTION_CODE/>
+                     <DYNAMIC/>
+                     <DARATAB dd:minOccur="0">
+                        <DATA dd:maxOccur="-1">
+                           <FUNCTION/>
+                           <MANDANT/>
+                           <DEL_DATE/>
+                           <SAP_OBJECT/>
+                           <AR_OBJECT/>
+                           <OBJECT_ID/>
+                           <FORM_ID/>
+                           <FORMARCHIV/>
+                           <RESERVE/>
+                           <NOTIZ/>
+                        </DATA>
+                     </DARATAB>
+                     <REPLANGU1/>
+                     <REPLANGU2/>
+                     <REPLANGU3/>
+                  </WA_DOCPARAMS>
+                  <WA_EXTENDED_PARAMS>
+                     <KAPPL/>
+                     <KSCHL/>
+                     <OBJTYPE/>
+                     <REPEAT_FLAG/>
+                     <FORM_ID/>
+                     <PARVW/>
+                  </WA_EXTENDED_PARAMS>
+                  <WA_COMM_VALUES>
+                     <ADTEL>
+                        <CONSNUMBER/>
+                        <COUNTRY/>
+                        <FLGDEFAULT/>
+                        <FLG_NOUSE/>
+                        <HOME_FLAG/>
+                        <TEL_NUMBER/>
+                        <TEL_EXTENS/>
+                        <TELNR_LONG/>
+                        <TELNR_CALL/>
+                        <DFT_RECEIV/>
+                        <R3_USER/>
+                        <REMARK/>
+                        <VALID_FROM/>
+                        <VALID_TO/>
+                        <UPDATEFLAG/>
+                     </ADTEL>
+                     <ADFAX>
+                        <CONSNUMBER/>
+                        <COUNTRY/>
+                        <FLGDEFAULT/>
+                        <FLG_NOUSE/>
+                        <HOME_FLAG/>
+                        <FAX_NUMBER/>
+                        <FAX_EXTENS/>
+                        <FAXNR_LONG/>
+                        <FAXNR_CALL/>
+                        <FAX_GROUP/>
+                        <DFT_RECEIV/>
+                        <R3_USER/>
+                        <REMARK/>
+                        <VALID_FROM/>
+                        <VALID_TO/>
+                        <UPDATEFLAG/>
+                     </ADFAX>
+                     <ADTTX>
+                        <CONSNUMBER/>
+                        <COUNTRY/>
+                        <FLGDEFAULT/>
+                        <FLG_NOUSE/>
+                        <HOME_FLAG/>
+                        <TTX_NUMBER/>
+                        <DFT_RECEIV/>
+                        <R3_USER/>
+                        <REMARK/>
+                        <VALID_FROM/>
+                        <VALID_TO/>
+                        <UPDATEFLAG/>
+                     </ADTTX>
+                     <ADTLX>
+                        <CONSNUMBER/>
+                        <COUNTRY/>
+                        <FLGDEFAULT/>
+                        <FLG_NOUSE/>
+                        <HOME_FLAG/>
+                        <TLX_NUMBER/>
+                        <DFT_RECEIV/>
+                        <R3_USER/>
+                        <REMARK/>
+                        <VALID_FROM/>
+                        <VALID_TO/>
+                        <UPDATEFLAG/>
+                     </ADTLX>
+                     <ADSMTP>
+                        <CONSNUMBER/>
+                        <FLGDEFAULT/>
+                        <FLG_NOUSE/>
+                        <HOME_FLAG/>
+                        <SMTP_ADDR/>
+                        <SMTP_SRCH/>
+                        <DFT_RECEIV/>
+                        <R3_USER/>
+                        <ENCODE/>
+                        <TNEF/>
+                        <REMARK/>
+                        <VALID_FROM/>
+                        <VALID_TO/>
+                        <UPDATEFLAG/>
+                     </ADSMTP>
+                     <ADRML>
+                        <CONSNUMBER/>
+                        <FLGDEFAULT/>
+                        <FLG_NOUSE/>
+                        <HOME_FLAG/>
+                        <SYMB_DEST/>
+                        <RECVR_TYPE/>
+                        <UMAND/>
+                        <UNAME/>
+                        <DFT_RECEIV/>
+                        <R3_USER/>
+                        <REMARK/>
+                        <VALID_FROM/>
+                        <VALID_TO/>
+                        <UPDATEFLAG/>
+                     </ADRML>
+                     <ADX400>
+                        <CONSNUMBER/>
+                        <FLGDEFAULT/>
+                        <FLG_NOUSE/>
+                        <HOME_FLAG/>
+                        <X4COUNTRY/>
+                        <X4ADMIN/>
+                        <X4PRIVD/>
+                        <X4ORG/>
+                        <X4ORG1/>
+                        <X4ORG2/>
+                        <X4ORG3/>
+                        <X4ORG4/>
+                        <X4LNAME/>
+                        <X4FNAME/>
+                        <X4INI/>
+                        <X4GENER/>
+                        <X4X121/>
+                        <X4TERMID/>
+                        <X4TERMTP/>
+                        <X4UANUMID/>
+                        <DDA_TYPE1/>
+                        <DDA_VALUE1/>
+                        <DDA_TYPE2/>
+                        <DDA_VALUE2/>
+                        <DDA_TYPE3/>
+                        <DDA_VALUE3/>
+                        <DDA_TYPE4/>
+                        <DDA_VALUE4/>
+                        <DFT_RECEIV/>
+                        <R3_USER/>
+                        <TXT_ENCODE/>
+                        <TNEF/>
+                        <REMARK/>
+                        <VALID_FROM/>
+                        <VALID_TO/>
+                        <UPDATEFLAG/>
+                     </ADX400>
+                     <ADRFC>
+                        <CONSNUMBER/>
+                        <FLGDEFAULT/>
+                        <FLG_NOUSE/>
+                        <HOME_FLAG/>
+                        <LOG_DEST/>
+                        <DFT_RECEIV/>
+                        <R3_USER/>
+                        <REMARK/>
+                        <VALID_FROM/>
+                        <VALID_TO/>
+                        <UPDATEFLAG/>
+                     </ADRFC>
+                     <ADPRT>
+                        <CONSNUMBER/>
+                        <FLGDEFAULT/>
+                        <FLG_NOUSE/>
+                        <HOME_FLAG/>
+                        <PRINT_DEST/>
+                        <DFT_RECEIV/>
+                        <REMARK/>
+                        <VALID_FROM/>
+                        <VALID_TO/>
+                        <UPDATEFLAG/>
+                     </ADPRT>
+                     <ADSSF>
+                        <CONSNUMBER/>
+                        <FLGDEFAULT/>
+                        <FLG_NOUSE/>
+                        <HOME_FLAG/>
+                        <SSFDEST/>
+                        <SSF_SCREEN/>
+                        <SSFNS/>
+                        <SSFPROF/>
+                        <AD_DUMMY/>
+                        <DFT_RECEIV/>
+                        <REMARK/>
+                        <VALID_FROM/>
+                        <VALID_TO/>
+                        <UPDATEFLAG/>
+                        <SSFID/>
+                     </ADSSF>
+                     <ADURI>
+                        <CONSNUMBER/>
+                        <FLGDEFAULT/>
+                        <FLG_NOUSE/>
+                        <HOME_FLAG/>
+                        <URI_TYPE/>
+                        <URI_SCREEN/>
+                        <DFT_RECEIV/>
+                        <REMARK/>
+                        <VALID_FROM/>
+                        <VALID_TO/>
+                        <UPDATEFLAG/>
+                        <URI_ADDR/>
+                     </ADURI>
+                     <ADPAG>
+                        <CONSNUMBER/>
+                        <COUNTRY/>
+                        <FLGDEFAULT/>
+                        <FLG_NOUSE/>
+                        <HOME_FLAG/>
+                        <PAGER_SERV/>
+                        <PAGER_NMBR/>
+                        <PAGER_LONG/>
+                        <PAGER_CALL/>
+                        <DFT_RECEIV/>
+                        <R3_USER/>
+                        <REMARK/>
+                        <VALID_FROM/>
+                        <VALID_TO/>
+                        <UPDATEFLAG/>
+                     </ADPAG>
+                  </WA_COMM_VALUES>
+               </WA_CORE_PARAMS>
+               <WA_ORG_DATA>
+                  <LOGO/>
+                  <SENDER/>
+                  <FOOTER/>
+                  <COMPANY_NAME/>
+               </WA_ORG_DATA>
+            </IS_DATA_CORE>
+         </IS_TRANSLATE>
+         <WA_LABEL_DATA dd:minOccur="0">
+            <DATA dd:maxOccur="-1">
+               <VKORG/>
+               <LGNUM/>
+               <LANE/>
+               <HU/>
+               <INFO/>
+               <REF/>
+               <DATE/>
+               <TIME/>
+               <USER/>
+               <IS/>
+            </DATA>
+         </WA_LABEL_DATA>
+      </data>
+   </dd:dataDescription>
+</xfa:datasets>
+<localeSet xmlns="http://www.xfa.org/schema/xfa-locale-set/2.7/">
+   <locale desc="Deutsch (Deutschland)" name="de_DE">
+      <calendarSymbols name="gregorian">
+         <monthNames>
+            <month>Januar</month>
+            <month>Februar</month>
+            <month>März</month>
+            <month>April</month>
+            <month>Mai</month>
+            <month>Juni</month>
+            <month>Juli</month>
+            <month>August</month>
+            <month>September</month>
+            <month>Oktober</month>
+            <month>November</month>
+            <month>Dezember</month>
+         </monthNames>
+         <monthNames abbr="1">
+            <month>Jan</month>
+            <month>Feb</month>
+            <month>Mrz</month>
+            <month>Apr</month>
+            <month>Mai</month>
+            <month>Jun</month>
+            <month>Jul</month>
+            <month>Aug</month>
+            <month>Sep</month>
+            <month>Okt</month>
+            <month>Nov</month>
+            <month>Dez</month>
+         </monthNames>
+         <dayNames>
+            <day>Sonntag</day>
+            <day>Montag</day>
+            <day>Dienstag</day>
+            <day>Mittwoch</day>
+            <day>Donnerstag</day>
+            <day>Freitag</day>
+            <day>Samstag</day>
+         </dayNames>
+         <dayNames abbr="1">
+            <day>So</day>
+            <day>Mo</day>
+            <day>Di</day>
+            <day>Mi</day>
+            <day>Do</day>
+            <day>Fr</day>
+            <day>Sa</day>
+         </dayNames>
+         <meridiemNames>
+            <meridiem>vorm.</meridiem>
+            <meridiem>nachm.</meridiem>
+         </meridiemNames>
+         <eraNames>
+            <era>v. Chr.</era>
+            <era>n. Chr.</era>
+         </eraNames>
+      </calendarSymbols>
+      <datePatterns>
+         <datePattern name="full">EEEE, D. MMMM YYYY</datePattern>
+         <datePattern name="long">D. MMMM YYYY</datePattern>
+         <datePattern name="med">DD.MM.YYYY</datePattern>
+         <datePattern name="short">DD.MM.YY</datePattern>
+      </datePatterns>
+      <timePatterns>
+         <timePattern name="full">H:MM' Uhr 'Z</timePattern>
+         <timePattern name="long">HH:MM:SS Z</timePattern>
+         <timePattern name="med">HH:MM:SS</timePattern>
+         <timePattern name="short">HH:MM</timePattern>
+      </timePatterns>
+      <dateTimeSymbols>GjMtkHmsSEDFwWahKzZ</dateTimeSymbols>
+      <numberPatterns>
+         <numberPattern name="numeric">z,zz9.zzz</numberPattern>
+         <numberPattern name="currency">z,zz9.99 $</numberPattern>
+         <numberPattern name="percent">z,zz9%</numberPattern>
+      </numberPatterns>
+      <numberSymbols>
+         <numberSymbol name="decimal">,</numberSymbol>
+         <numberSymbol name="grouping">.</numberSymbol>
+         <numberSymbol name="percent">%</numberSymbol>
+         <numberSymbol name="minus">-</numberSymbol>
+         <numberSymbol name="zero">0</numberSymbol>
+      </numberSymbols>
+      <currencySymbols>
+         <currencySymbol name="symbol">€</currencySymbol>
+         <currencySymbol name="isoname">EUR</currencySymbol>
+         <currencySymbol name="decimal">,</currencySymbol>
+      </currencySymbols>
+      <typefaces>
+         <typeface name="Myriad Pro"/>
+         <typeface name="Minion Pro"/>
+         <typeface name="Courier Std"/>
+         <typeface name="Adobe Pi Std"/>
+         <typeface name="Adobe Hebrew"/>
+         <typeface name="Adobe Arabic"/>
+         <typeface name="Adobe Thai"/>
+         <typeface name="Kozuka Gothic Pro-VI M"/>
+         <typeface name="Kozuka Mincho Pro-VI R"/>
+         <typeface name="Adobe Ming Std L"/>
+         <typeface name="Adobe Song Std L"/>
+         <typeface name="Adobe Myungjo Std M"/>
+         <typeface name="Adobe Devanagari"/>
+      </typefaces>
+   </locale>
+</localeSet>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.4-c005 78.150055, 2013/08/07-22:58:47        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description xmlns:xmp="http://ns.adobe.com/xap/1.0/" xmlns:pdf="http://ns.adobe.com/pdf/1.3/" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/" xmlns:desc="http://ns.adobe.com/xfa/promoted-desc/" rdf:about="">
+         <xmp:MetadataDate>2023-02-21T10:27:54Z</xmp:MetadataDate>
+         <xmp:CreatorTool>Adobe LiveCycle Designer 11.0</xmp:CreatorTool>
+         <pdf:Producer>Adobe LiveCycle Designer 11.0</pdf:Producer>
+         <xmpMM:DocumentID>uuid:6d926f43-7183-4e38-a16a-50d258cf3aac</xmpMM:DocumentID>
+         <desc:version rdf:parseType="Resource">
+            <rdf:value>11.0.1.20160812.1.925753.903801</rdf:value>
+            <desc:ref>/template/subform[1]</desc:ref>
+         </desc:version>
+      </rdf:Description>
+   </rdf:RDF>
+</x:xmpmeta></xdp:xdp>

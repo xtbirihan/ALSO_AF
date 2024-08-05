@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_TABL" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD02V>
+    <TABNAME>ZAF_S_CHANNEL_REF</TABNAME>
+    <TABCLASS>INTTAB</TABCLASS>
+    <LANGDEP>X</LANGDEP>
+    <EXCLASS>4</EXCLASS>
+   </DD02V>
+   <DD03P_TABLE>
+    <DD03P>
+     <FIELDNAME>OBJECT</FIELDNAME>
+     <ROLLNAME>ZIF_AF_CORE_CONNECTOR</ROLLNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <DATATYPE>REF</DATATYPE>
+     <MASK>  REF RI</MASK>
+     <COMPTYPE>R</COMPTYPE>
+     <REFTYPE>I</REFTYPE>
+    </DD03P>
+    <DD03P>
+     <FIELDNAME>PARAMS</FIELDNAME>
+     <ROLLNAME>ZAF_S_CHANNEL_PARAMS</ROLLNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <DATATYPE>STRU</DATATYPE>
+     <MASK>  STRUS</MASK>
+     <COMPTYPE>S</COMPTYPE>
+    </DD03P>
+   </DD03P_TABLE>
+   <I18N_LANGS>
+    <LANGU>D</LANGU>
+   </I18N_LANGS>
+   <DD02_TEXTS>
+    <item>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DDTEXT>Kanal Referenz Struktur</DDTEXT>
+    </item>
+   </DD02_TEXTS>
+  </asx:values>
+ </asx:abap>
+</abapGit>
